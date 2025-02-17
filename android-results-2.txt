@@ -1,0 +1,1992 @@
+--------- beginning of main
+I/DOTNET  : // Validating benchmarks:
+I/DOTNET  : //    * No exporters defined, results will not be persisted.
+I/DOTNET  : 
+I/DOTNET  : // ***** BenchmarkRunner: Start   *****
+I/DOTNET  : // ***** Found 10 benchmark(s) in total *****
+I/DOTNET  : // ***** Building 1 exe(s) in Parallel: Start   *****
+I/DOTNET  : // ***** Done, took 00:00:00 (0.08 sec)   *****
+I/DOTNET  : // Found 2 benchmarks:
+I/DOTNET  : //   CreateBinding.Classic_Create: Job-JXMIGL(Toolchain=InProcessEmitToolchain)
+I/DOTNET  : //   CreateBinding.Compiled_Create: Job-JXMIGL(Toolchain=InProcessEmitToolchain)
+I/DOTNET  : 
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: CreateBinding.Classic_Create: Job-JXMIGL(Toolchain=InProcessEmitToolchain)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-JXMIGL(Toolchain=InProcessEmitToolchain)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 64427.00 ns, 64.4270 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 463750.00 ns, 463.7500 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  2: 16 op, 152708.00 ns, 9.5443 us/op
+I/DOTNET  : WorkloadJitting  2: 16 op, 186250.00 ns, 11.6406 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadPilot    1: 16 op, 44636.00 ns, 2.7898 us/op
+I/DOTNET  : WorkloadPilot    2: 32 op, 67292.00 ns, 2.1029 us/op
+I/DOTNET  : WorkloadPilot    3: 64 op, 113593.00 ns, 1.7749 us/op
+I/DOTNET  : WorkloadPilot    4: 128 op, 203386.00 ns, 1.5890 us/op
+I/DOTNET  : WorkloadPilot    5: 256 op, 404844.00 ns, 1.5814 us/op
+I/DOTNET  : WorkloadPilot    6: 512 op, 827865.00 ns, 1.6169 us/op
+I/DOTNET  : WorkloadPilot    7: 1024 op, 1759427.00 ns, 1.7182 us/op
+I/DOTNET  : WorkloadPilot    8: 2048 op, 3407448.00 ns, 1.6638 us/op
+I/DOTNET  : WorkloadPilot    9: 4096 op, 12532552.00 ns, 3.0597 us/op
+I/DOTNET  : WorkloadPilot   10: 8192 op, 24581302.00 ns, 3.0006 us/op
+I/DOTNET  : WorkloadPilot   11: 16384 op, 49486875.00 ns, 3.0204 us/op
+I/DOTNET  : WorkloadPilot   12: 32768 op, 112147187.00 ns, 3.4225 us/op
+I/DOTNET  : WorkloadPilot   13: 65536 op, 237065521.00 ns, 3.6173 us/op
+I/DOTNET  : WorkloadPilot   14: 131072 op, 534045156.00 ns, 4.0744 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 131072 op, 801458.00 ns, 6.1146 ns/op
+I/DOTNET  : OverheadWarmup   2: 131072 op, 802084.00 ns, 6.1194 ns/op
+I/DOTNET  : OverheadWarmup   3: 131072 op, 806927.00 ns, 6.1564 ns/op
+I/DOTNET  : OverheadWarmup   4: 131072 op, 831198.00 ns, 6.3415 ns/op
+I/DOTNET  : OverheadWarmup   5: 131072 op, 819896.00 ns, 6.2553 ns/op
+I/DOTNET  : OverheadWarmup   6: 131072 op, 811406.00 ns, 6.1905 ns/op
+I/DOTNET  : OverheadWarmup   7: 131072 op, 832031.00 ns, 6.3479 ns/op
+I/DOTNET  : OverheadWarmup   8: 131072 op, 806979.00 ns, 6.1568 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 131072 op, 831146.00 ns, 6.3411 ns/op
+I/DOTNET  : OverheadActual   2: 131072 op, 827292.00 ns, 6.3117 ns/op
+I/DOTNET  : OverheadActual   3: 131072 op, 808021.00 ns, 6.1647 ns/op
+I/DOTNET  : OverheadActual   4: 131072 op, 818073.00 ns, 6.2414 ns/op
+I/DOTNET  : OverheadActual   5: 131072 op, 811615.00 ns, 6.1921 ns/op
+I/DOTNET  : OverheadActual   6: 131072 op, 817500.00 ns, 6.2370 ns/op
+I/DOTNET  : OverheadActual   7: 131072 op, 802396.00 ns, 6.1218 ns/op
+I/DOTNET  : OverheadActual   8: 131072 op, 868907.00 ns, 6.6292 ns/op
+I/DOTNET  : OverheadActual   9: 131072 op, 802084.00 ns, 6.1194 ns/op
+I/DOTNET  : OverheadActual  10: 131072 op, 802656.00 ns, 6.1238 ns/op
+I/DOTNET  : OverheadActual  11: 131072 op, 828646.00 ns, 6.3221 ns/op
+I/DOTNET  : OverheadActual  12: 131072 op, 802239.00 ns, 6.1206 ns/op
+I/DOTNET  : OverheadActual  13: 131072 op, 802136.00 ns, 6.1198 ns/op
+I/DOTNET  : OverheadActual  14: 131072 op, 817500.00 ns, 6.2370 ns/op
+I/DOTNET  : OverheadActual  15: 131072 op, 833073.00 ns, 6.3558 ns/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 131072 op, 490638749.00 ns, 3.7433 us/op
+I/DOTNET  : WorkloadWarmup   2: 131072 op, 488538958.00 ns, 3.7273 us/op
+I/DOTNET  : WorkloadWarmup   3: 131072 op, 483893646.00 ns, 3.6918 us/op
+I/DOTNET  : WorkloadWarmup   4: 131072 op, 495281718.00 ns, 3.7787 us/op
+I/DOTNET  : WorkloadWarmup   5: 131072 op, 486858437.00 ns, 3.7144 us/op
+I/DOTNET  : WorkloadWarmup   6: 131072 op, 491505729.00 ns, 3.7499 us/op
+I/DOTNET  : WorkloadWarmup   7: 131072 op, 487352917.00 ns, 3.7182 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 131072 op, 485082447.00 ns, 3.7009 us/op
+I/DOTNET  : WorkloadActual   2: 131072 op, 484695729.00 ns, 3.6979 us/op
+I/DOTNET  : WorkloadActual   3: 131072 op, 487017292.00 ns, 3.7156 us/op
+I/DOTNET  : WorkloadActual   4: 131072 op, 491195781.00 ns, 3.7475 us/op
+I/DOTNET  : WorkloadActual   5: 131072 op, 486981458.00 ns, 3.7154 us/op
+I/DOTNET  : WorkloadActual   6: 131072 op, 486104271.00 ns, 3.7087 us/op
+I/DOTNET  : WorkloadActual   7: 131072 op, 483813906.00 ns, 3.6912 us/op
+I/DOTNET  : WorkloadActual   8: 131072 op, 490231197.00 ns, 3.7402 us/op
+I/DOTNET  : WorkloadActual   9: 131072 op, 487419687.00 ns, 3.7187 us/op
+I/DOTNET  : WorkloadActual  10: 131072 op, 480826927.00 ns, 3.6684 us/op
+I/DOTNET  : WorkloadActual  11: 131072 op, 486859010.00 ns, 3.7144 us/op
+I/DOTNET  : WorkloadActual  12: 131072 op, 483822604.00 ns, 3.6913 us/op
+I/DOTNET  : WorkloadActual  13: 131072 op, 489086666.00 ns, 3.7314 us/op
+I/DOTNET  : WorkloadActual  14: 131072 op, 486569896.00 ns, 3.7122 us/op
+I/DOTNET  : WorkloadActual  15: 131072 op, 634735052.00 ns, 4.8426 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 131072 op, 484264947.00 ns, 3.6946 us/op
+I/DOTNET  : WorkloadResult   2: 131072 op, 483878229.00 ns, 3.6917 us/op
+I/DOTNET  : WorkloadResult   3: 131072 op, 486199792.00 ns, 3.7094 us/op
+I/DOTNET  : WorkloadResult   4: 131072 op, 490378281.00 ns, 3.7413 us/op
+I/DOTNET  : WorkloadResult   5: 131072 op, 486163958.00 ns, 3.7091 us/op
+I/DOTNET  : WorkloadResult   6: 131072 op, 485286771.00 ns, 3.7024 us/op
+I/DOTNET  : WorkloadResult   7: 131072 op, 482996406.00 ns, 3.6850 us/op
+I/DOTNET  : WorkloadResult   8: 131072 op, 489413697.00 ns, 3.7339 us/op
+I/DOTNET  : WorkloadResult   9: 131072 op, 486602187.00 ns, 3.7125 us/op
+I/DOTNET  : WorkloadResult  10: 131072 op, 480009427.00 ns, 3.6622 us/op
+I/DOTNET  : WorkloadResult  11: 131072 op, 486041510.00 ns, 3.7082 us/op
+I/DOTNET  : WorkloadResult  12: 131072 op, 483005104.00 ns, 3.6850 us/op
+I/DOTNET  : WorkloadResult  13: 131072 op, 488269166.00 ns, 3.7252 us/op
+I/DOTNET  : WorkloadResult  14: 131072 op, 485752396.00 ns, 3.7060 us/op
+I/DOTNET  : // GC:  30 6 6 151009152 131072
+I/DOTNET  : // Threading:  0 0 131072
+I/DOTNET  : 
+I/DOTNET  : Mean = 3.705 us, StdErr = 0.006 us (0.15%), N = 14, StdDev = 0.021 us
+I/DOTNET  : Min = 3.662 us, Q1 = 3.692 us, Median = 3.707 us, Q3 = 3.712 us, Max = 3.741 us
+I/DOTNET  : IQR = 0.019 us, LowerFence = 3.664 us, UpperFence = 3.741 us
+I/DOTNET  : ConfidenceInterval = [3.681 us; 3.728 us] (CI 99.9%), Margin = 0.023 us (0.63% of Mean)
+I/DOTNET  : Skewness = -0.1, Kurtosis = 2.44, MValue = 2
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 9 (90.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:47 (0h 2m from now) **
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: CreateBinding.Compiled_Create: Job-JXMIGL(Toolchain=InProcessEmitToolchain)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-JXMIGL(Toolchain=InProcessEmitToolchain)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 194063.00 ns, 194.0630 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 624896.00 ns, 624.8960 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  2: 16 op, 151406.00 ns, 9.4629 us/op
+I/DOTNET  : WorkloadJitting  2: 16 op, 175156.00 ns, 10.9473 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadPilot    1: 16 op, 29583.00 ns, 1.8489 us/op
+I/DOTNET  : WorkloadPilot    2: 32 op, 49688.00 ns, 1.5528 us/op
+I/DOTNET  : WorkloadPilot    3: 64 op, 76198.00 ns, 1.1906 us/op
+I/DOTNET  : WorkloadPilot    4: 128 op, 134114.00 ns, 1.0478 us/op
+I/DOTNET  : WorkloadPilot    5: 256 op, 311510.00 ns, 1.2168 us/op
+I/DOTNET  : WorkloadPilot    6: 512 op, 616094.00 ns, 1.2033 us/op
+I/DOTNET  : WorkloadPilot    7: 1024 op, 1159323.00 ns, 1.1322 us/op
+I/DOTNET  : WorkloadPilot    8: 2048 op, 2290000.00 ns, 1.1182 us/op
+I/DOTNET  : WorkloadPilot    9: 4096 op, 4848021.00 ns, 1.1836 us/op
+I/DOTNET  : WorkloadPilot   10: 8192 op, 15143802.00 ns, 1.8486 us/op
+I/DOTNET  : WorkloadPilot   11: 16384 op, 36865052.00 ns, 2.2501 us/op
+I/DOTNET  : WorkloadPilot   12: 32768 op, 88256667.00 ns, 2.6934 us/op
+I/DOTNET  : WorkloadPilot   13: 65536 op, 184043594.00 ns, 2.8083 us/op
+I/DOTNET  : WorkloadPilot   14: 131072 op, 379098906.00 ns, 2.8923 us/op
+I/DOTNET  : WorkloadPilot   15: 262144 op, 778586562.00 ns, 2.9701 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 262144 op, 1626042.00 ns, 6.2029 ns/op
+I/DOTNET  : OverheadWarmup   2: 262144 op, 1637500.00 ns, 6.2466 ns/op
+I/DOTNET  : OverheadWarmup   3: 262144 op, 1603281.00 ns, 6.1160 ns/op
+I/DOTNET  : OverheadWarmup   4: 262144 op, 1603489.00 ns, 6.1168 ns/op
+I/DOTNET  : OverheadWarmup   5: 262144 op, 1668542.00 ns, 6.3650 ns/op
+I/DOTNET  : OverheadWarmup   6: 262144 op, 1615312.00 ns, 6.1619 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 262144 op, 1635677.00 ns, 6.2396 ns/op
+I/DOTNET  : OverheadActual   2: 262144 op, 1624948.00 ns, 6.1987 ns/op
+I/DOTNET  : OverheadActual   3: 262144 op, 1625208.00 ns, 6.1997 ns/op
+I/DOTNET  : OverheadActual   4: 262144 op, 1603333.00 ns, 6.1162 ns/op
+I/DOTNET  : OverheadActual   5: 262144 op, 1625260.00 ns, 6.1999 ns/op
+I/DOTNET  : OverheadActual   6: 262144 op, 1635677.00 ns, 6.2396 ns/op
+I/DOTNET  : OverheadActual   7: 262144 op, 1604010.00 ns, 6.1188 ns/op
+I/DOTNET  : OverheadActual   8: 262144 op, 1626563.00 ns, 6.2048 ns/op
+I/DOTNET  : OverheadActual   9: 262144 op, 1634792.00 ns, 6.2362 ns/op
+I/DOTNET  : OverheadActual  10: 262144 op, 1650052.00 ns, 6.2944 ns/op
+I/DOTNET  : OverheadActual  11: 262144 op, 1602604.00 ns, 6.1134 ns/op
+I/DOTNET  : OverheadActual  12: 262144 op, 1630521.00 ns, 6.2199 ns/op
+I/DOTNET  : OverheadActual  13: 262144 op, 1635469.00 ns, 6.2388 ns/op
+I/DOTNET  : OverheadActual  14: 262144 op, 1626562.00 ns, 6.2048 ns/op
+I/DOTNET  : OverheadActual  15: 262144 op, 1634844.00 ns, 6.2364 ns/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 262144 op, 754706718.00 ns, 2.8790 us/op
+I/DOTNET  : WorkloadWarmup   2: 262144 op, 780957239.00 ns, 2.9791 us/op
+I/DOTNET  : WorkloadWarmup   3: 262144 op, 769425416.00 ns, 2.9351 us/op
+I/DOTNET  : WorkloadWarmup   4: 262144 op, 778177291.00 ns, 2.9685 us/op
+I/DOTNET  : WorkloadWarmup   5: 262144 op, 776777917.00 ns, 2.9632 us/op
+I/DOTNET  : WorkloadWarmup   6: 262144 op, 790091146.00 ns, 3.0140 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 262144 op, 761088750.00 ns, 2.9033 us/op
+I/DOTNET  : WorkloadActual   2: 262144 op, 794417031.00 ns, 3.0305 us/op
+I/DOTNET  : WorkloadActual   3: 262144 op, 774879792.00 ns, 2.9559 us/op
+I/DOTNET  : WorkloadActual   4: 262144 op, 780056563.00 ns, 2.9757 us/op
+I/DOTNET  : WorkloadActual   5: 262144 op, 765597708.00 ns, 2.9205 us/op
+I/DOTNET  : WorkloadActual   6: 262144 op, 777806250.00 ns, 2.9671 us/op
+I/DOTNET  : WorkloadActual   7: 262144 op, 792983281.00 ns, 3.0250 us/op
+I/DOTNET  : WorkloadActual   8: 262144 op, 765124114.00 ns, 2.9187 us/op
+I/DOTNET  : WorkloadActual   9: 262144 op, 770358437.00 ns, 2.9387 us/op
+I/DOTNET  : WorkloadActual  10: 262144 op, 792247135.00 ns, 3.0222 us/op
+I/DOTNET  : WorkloadActual  11: 262144 op, 759764896.00 ns, 2.8983 us/op
+I/DOTNET  : WorkloadActual  12: 262144 op, 760281354.00 ns, 2.9002 us/op
+I/DOTNET  : WorkloadActual  13: 262144 op, 779728437.00 ns, 2.9744 us/op
+I/DOTNET  : WorkloadActual  14: 262144 op, 775656979.00 ns, 2.9589 us/op
+I/DOTNET  : WorkloadActual  15: 262144 op, 775960469.00 ns, 2.9601 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 262144 op, 759462187.00 ns, 2.8971 us/op
+I/DOTNET  : WorkloadResult   2: 262144 op, 792790468.00 ns, 3.0243 us/op
+I/DOTNET  : WorkloadResult   3: 262144 op, 773253229.00 ns, 2.9497 us/op
+I/DOTNET  : WorkloadResult   4: 262144 op, 778430000.00 ns, 2.9695 us/op
+I/DOTNET  : WorkloadResult   5: 262144 op, 763971145.00 ns, 2.9143 us/op
+I/DOTNET  : WorkloadResult   6: 262144 op, 776179687.00 ns, 2.9609 us/op
+I/DOTNET  : WorkloadResult   7: 262144 op, 791356718.00 ns, 3.0188 us/op
+I/DOTNET  : WorkloadResult   8: 262144 op, 763497551.00 ns, 2.9125 us/op
+I/DOTNET  : WorkloadResult   9: 262144 op, 768731874.00 ns, 2.9325 us/op
+I/DOTNET  : WorkloadResult  10: 262144 op, 790620572.00 ns, 3.0160 us/op
+I/DOTNET  : WorkloadResult  11: 262144 op, 758138333.00 ns, 2.8921 us/op
+I/DOTNET  : WorkloadResult  12: 262144 op, 758654791.00 ns, 2.8940 us/op
+I/DOTNET  : WorkloadResult  13: 262144 op, 778101874.00 ns, 2.9682 us/op
+I/DOTNET  : WorkloadResult  14: 262144 op, 774030416.00 ns, 2.9527 us/op
+I/DOTNET  : WorkloadResult  15: 262144 op, 774333906.00 ns, 2.9538 us/op
+I/DOTNET  : // GC:  53 9 9 251685152 262144
+I/DOTNET  : // Threading:  0 0 262144
+I/DOTNET  : 
+I/DOTNET  : Mean = 2.950 us, StdErr = 0.011 us (0.39%), N = 15, StdDev = 0.044 us
+I/DOTNET  : Min = 2.892 us, Q1 = 2.913 us, Median = 2.953 us, Q3 = 2.969 us, Max = 3.024 us
+I/DOTNET  : IQR = 0.055 us, LowerFence = 2.830 us, UpperFence = 3.052 us
+I/DOTNET  : ConfidenceInterval = [2.903 us; 2.998 us] (CI 99.9%), Margin = 0.048 us (1.61% of Mean)
+I/DOTNET  : Skewness = 0.29, Kurtosis = 1.77, MValue = 2
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 8 (80.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:47 (0h 2m from now) **
+I/DOTNET  : // ***** BenchmarkRunner: Finish  *****
+I/DOTNET  : 
+I/DOTNET  : // * Export *
+I/DOTNET  : 
+I/DOTNET  : // * Detailed results *
+I/DOTNET  : CreateBinding.Compiled_Create: Job-JXMIGL(Toolchain=InProcessEmitToolchain)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 2.950 us, StdErr = 0.011 us (0.39%), N = 15, StdDev = 0.044 us
+I/DOTNET  : Min = 2.892 us, Q1 = 2.913 us, Median = 2.953 us, Q3 = 2.969 us, Max = 3.024 us
+I/DOTNET  : IQR = 0.055 us, LowerFence = 2.830 us, UpperFence = 3.052 us
+I/DOTNET  : ConfidenceInterval = [2.903 us; 2.998 us] (CI 99.9%), Margin = 0.048 us (1.61% of Mean)
+I/DOTNET  : Skewness = 0.29, Kurtosis = 1.77, MValue = 2
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [2.868 us ; 2.980 us) | @@@@@@@@@@@@
+I/DOTNET  : [2.980 us ; 3.048 us) | @@@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : CreateBinding.Classic_Create: Job-JXMIGL(Toolchain=InProcessEmitToolchain)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 3.705 us, StdErr = 0.006 us (0.15%), N = 14, StdDev = 0.021 us
+I/DOTNET  : Min = 3.662 us, Q1 = 3.692 us, Median = 3.707 us, Q3 = 3.712 us, Max = 3.741 us
+I/DOTNET  : IQR = 0.019 us, LowerFence = 3.664 us, UpperFence = 3.741 us
+I/DOTNET  : ConfidenceInterval = [3.681 us; 3.728 us] (CI 99.9%), Margin = 0.023 us (0.63% of Mean)
+I/DOTNET  : Skewness = -0.1, Kurtosis = 2.44, MValue = 2
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [3.651 us ; 3.753 us) | @@@@@@@@@@@@@@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : // * Summary *
+I/DOTNET  : 
+I/DOTNET  : BenchmarkDotNet v0.14.0, Unknown 
+I/DOTNET  : Unknown processor
+I/DOTNET  :   [Host] : .NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : 
+I/DOTNET  : Toolchain=InProcessEmitToolchain  
+I/DOTNET  : 
+I/DOTNET  : | Method          | Mean     | Error     | StdDev    | Ratio | Gen0   | Gen1   | Gen2   | Allocated | Alloc Ratio |
+I/DOTNET  : |---------------- |---------:|----------:|----------:|------:|-------:|-------:|-------:|----------:|------------:|
+I/DOTNET  : | Compiled_Create | 2.950 us | 0.0476 us | 0.0445 us |  0.80 | 0.2022 | 0.0343 | 0.0343 |     960 B |        0.83 |
+I/DOTNET  : | Classic_Create  | 3.705 us | 0.0234 us | 0.0207 us |  1.00 | 0.2289 | 0.0458 | 0.0458 |    1152 B |        1.00 |
+I/DOTNET  : 
+I/DOTNET  : // * Legends *
+I/DOTNET  :   Mean        : Arithmetic mean of all measurements
+I/DOTNET  :   Error       : Half of 99.9% confidence interval
+I/DOTNET  :   StdDev      : Standard deviation of all measurements
+I/DOTNET  :   Ratio       : Mean of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   Gen0        : GC Generation 0 collects per 1000 operations
+I/DOTNET  :   Gen1        : GC Generation 1 collects per 1000 operations
+I/DOTNET  :   Gen2        : GC Generation 2 collects per 1000 operations
+I/DOTNET  :   Allocated   : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+I/DOTNET  :   Alloc Ratio : Allocated memory ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   1 us        : 1 Microsecond (0.000001 sec)
+I/DOTNET  : 
+I/DOTNET  : // * Diagnostic Output - MemoryDiagnoser *
+I/DOTNET  : 
+I/DOTNET  : 
+I/DOTNET  : // ***** BenchmarkRunner: End *****
+I/DOTNET  : Run time: 00:00:34 (34.84 sec), executed benchmarks: 2
+I/DOTNET  : 
+I/DOTNET  : // Found 2 benchmarks:
+I/DOTNET  : //   SetBindingNoContext.Classic_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : //   SetBindingNoContext.Compiled_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: SetBindingNoContext.Classic_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 182865.00 ns, 182.8650 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 320782.00 ns, 320.7820 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadWarmup   2: 1 op, 677.00 ns, 677.0000 ns/op
+I/DOTNET  : OverheadWarmup   3: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadWarmup   4: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadWarmup   5: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadWarmup   6: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadWarmup   7: 1 op, 834.00 ns, 834.0000 ns/op
+I/DOTNET  : OverheadWarmup   8: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadWarmup   9: 1 op, 834.00 ns, 834.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual   2: 1 op, 625.00 ns, 625.0000 ns/op
+I/DOTNET  : OverheadActual   3: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual   4: 1 op, 677.00 ns, 677.0000 ns/op
+I/DOTNET  : OverheadActual   5: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : OverheadActual   6: 1 op, 625.00 ns, 625.0000 ns/op
+I/DOTNET  : OverheadActual   7: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual   8: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual   9: 1 op, 782.00 ns, 782.0000 ns/op
+I/DOTNET  : OverheadActual  10: 1 op, 677.00 ns, 677.0000 ns/op
+I/DOTNET  : OverheadActual  11: 1 op, 834.00 ns, 834.0000 ns/op
+I/DOTNET  : OverheadActual  12: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadActual  13: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadActual  14: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  15: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual  16: 1 op, 625.00 ns, 625.0000 ns/op
+I/DOTNET  : OverheadActual  17: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadActual  18: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadActual  19: 1 op, 573.00 ns, 573.0000 ns/op
+I/DOTNET  : OverheadActual  20: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 1 op, 39635.00 ns, 39.6350 us/op
+I/DOTNET  : WorkloadWarmup   2: 1 op, 37656.00 ns, 37.6560 us/op
+I/DOTNET  : WorkloadWarmup   3: 1 op, 37187.00 ns, 37.1870 us/op
+I/DOTNET  : WorkloadWarmup   4: 1 op, 37761.00 ns, 37.7610 us/op
+I/DOTNET  : WorkloadWarmup   5: 1 op, 35521.00 ns, 35.5210 us/op
+I/DOTNET  : WorkloadWarmup   6: 1 op, 38437.00 ns, 38.4370 us/op
+I/DOTNET  : WorkloadWarmup   7: 1 op, 37135.00 ns, 37.1350 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 1 op, 36458.00 ns, 36.4580 us/op
+I/DOTNET  : WorkloadActual   2: 1 op, 34063.00 ns, 34.0630 us/op
+I/DOTNET  : WorkloadActual   3: 1 op, 29115.00 ns, 29.1150 us/op
+I/DOTNET  : WorkloadActual   4: 1 op, 34167.00 ns, 34.1670 us/op
+I/DOTNET  : WorkloadActual   5: 1 op, 34688.00 ns, 34.6880 us/op
+I/DOTNET  : WorkloadActual   6: 1 op, 36146.00 ns, 36.1460 us/op
+I/DOTNET  : WorkloadActual   7: 1 op, 35417.00 ns, 35.4170 us/op
+I/DOTNET  : WorkloadActual   8: 1 op, 35833.00 ns, 35.8330 us/op
+I/DOTNET  : WorkloadActual   9: 1 op, 31719.00 ns, 31.7190 us/op
+I/DOTNET  : WorkloadActual  10: 1 op, 32761.00 ns, 32.7610 us/op
+I/DOTNET  : WorkloadActual  11: 1 op, 35834.00 ns, 35.8340 us/op
+I/DOTNET  : WorkloadActual  12: 1 op, 35886.00 ns, 35.8860 us/op
+I/DOTNET  : WorkloadActual  13: 1 op, 32552.00 ns, 32.5520 us/op
+I/DOTNET  : WorkloadActual  14: 1 op, 33646.00 ns, 33.6460 us/op
+I/DOTNET  : WorkloadActual  15: 1 op, 32292.00 ns, 32.2920 us/op
+I/DOTNET  : WorkloadActual  16: 1 op, 33542.00 ns, 33.5420 us/op
+I/DOTNET  : WorkloadActual  17: 1 op, 32917.00 ns, 32.9170 us/op
+I/DOTNET  : WorkloadActual  18: 1 op, 31927.00 ns, 31.9270 us/op
+I/DOTNET  : WorkloadActual  19: 1 op, 33750.00 ns, 33.7500 us/op
+I/DOTNET  : WorkloadActual  20: 1 op, 31771.00 ns, 31.7710 us/op
+I/DOTNET  : WorkloadActual  21: 1 op, 37032.00 ns, 37.0320 us/op
+I/DOTNET  : WorkloadActual  22: 1 op, 35105.00 ns, 35.1050 us/op
+I/DOTNET  : WorkloadActual  23: 1 op, 34479.00 ns, 34.4790 us/op
+I/DOTNET  : WorkloadActual  24: 1 op, 38334.00 ns, 38.3340 us/op
+I/DOTNET  : WorkloadActual  25: 1 op, 34740.00 ns, 34.7400 us/op
+I/DOTNET  : WorkloadActual  26: 1 op, 43177.00 ns, 43.1770 us/op
+I/DOTNET  : WorkloadActual  27: 1 op, 37657.00 ns, 37.6570 us/op
+I/DOTNET  : WorkloadActual  28: 1 op, 35677.00 ns, 35.6770 us/op
+I/DOTNET  : WorkloadActual  29: 1 op, 32656.00 ns, 32.6560 us/op
+I/DOTNET  : WorkloadActual  30: 1 op, 33177.00 ns, 33.1770 us/op
+I/DOTNET  : WorkloadActual  31: 1 op, 35156.00 ns, 35.1560 us/op
+I/DOTNET  : WorkloadActual  32: 1 op, 36250.00 ns, 36.2500 us/op
+I/DOTNET  : WorkloadActual  33: 1 op, 37396.00 ns, 37.3960 us/op
+I/DOTNET  : WorkloadActual  34: 1 op, 36145.00 ns, 36.1450 us/op
+I/DOTNET  : WorkloadActual  35: 1 op, 49427.00 ns, 49.4270 us/op
+I/DOTNET  : WorkloadActual  36: 1 op, 37448.00 ns, 37.4480 us/op
+I/DOTNET  : WorkloadActual  37: 1 op, 36927.00 ns, 36.9270 us/op
+I/DOTNET  : WorkloadActual  38: 1 op, 35365.00 ns, 35.3650 us/op
+I/DOTNET  : WorkloadActual  39: 1 op, 35521.00 ns, 35.5210 us/op
+I/DOTNET  : WorkloadActual  40: 1 op, 32553.00 ns, 32.5530 us/op
+I/DOTNET  : WorkloadActual  41: 1 op, 34635.00 ns, 34.6350 us/op
+I/DOTNET  : WorkloadActual  42: 1 op, 33021.00 ns, 33.0210 us/op
+I/DOTNET  : WorkloadActual  43: 1 op, 33750.00 ns, 33.7500 us/op
+I/DOTNET  : WorkloadActual  44: 1 op, 31927.00 ns, 31.9270 us/op
+I/DOTNET  : WorkloadActual  45: 1 op, 34740.00 ns, 34.7400 us/op
+I/DOTNET  : WorkloadActual  46: 1 op, 34583.00 ns, 34.5830 us/op
+I/DOTNET  : WorkloadActual  47: 1 op, 34010.00 ns, 34.0100 us/op
+I/DOTNET  : WorkloadActual  48: 1 op, 32552.00 ns, 32.5520 us/op
+I/DOTNET  : WorkloadActual  49: 1 op, 31875.00 ns, 31.8750 us/op
+I/DOTNET  : WorkloadActual  50: 1 op, 35104.00 ns, 35.1040 us/op
+I/DOTNET  : WorkloadActual  51: 1 op, 33958.00 ns, 33.9580 us/op
+I/DOTNET  : WorkloadActual  52: 1 op, 32084.00 ns, 32.0840 us/op
+I/DOTNET  : WorkloadActual  53: 1 op, 37344.00 ns, 37.3440 us/op
+I/DOTNET  : WorkloadActual  54: 1 op, 37448.00 ns, 37.4480 us/op
+I/DOTNET  : WorkloadActual  55: 1 op, 31927.00 ns, 31.9270 us/op
+I/DOTNET  : WorkloadActual  56: 1 op, 33646.00 ns, 33.6460 us/op
+I/DOTNET  : WorkloadActual  57: 1 op, 35573.00 ns, 35.5730 us/op
+I/DOTNET  : WorkloadActual  58: 1 op, 32865.00 ns, 32.8650 us/op
+I/DOTNET  : WorkloadActual  59: 1 op, 32708.00 ns, 32.7080 us/op
+I/DOTNET  : WorkloadActual  60: 1 op, 35052.00 ns, 35.0520 us/op
+I/DOTNET  : WorkloadActual  61: 1 op, 35157.00 ns, 35.1570 us/op
+I/DOTNET  : WorkloadActual  62: 1 op, 34688.00 ns, 34.6880 us/op
+I/DOTNET  : WorkloadActual  63: 1 op, 35834.00 ns, 35.8340 us/op
+I/DOTNET  : WorkloadActual  64: 1 op, 36406.00 ns, 36.4060 us/op
+I/DOTNET  : WorkloadActual  65: 1 op, 34375.00 ns, 34.3750 us/op
+I/DOTNET  : WorkloadActual  66: 1 op, 34010.00 ns, 34.0100 us/op
+I/DOTNET  : WorkloadActual  67: 1 op, 34427.00 ns, 34.4270 us/op
+I/DOTNET  : WorkloadActual  68: 1 op, 34427.00 ns, 34.4270 us/op
+I/DOTNET  : WorkloadActual  69: 1 op, 35312.00 ns, 35.3120 us/op
+I/DOTNET  : WorkloadActual  70: 1 op, 36458.00 ns, 36.4580 us/op
+I/DOTNET  : WorkloadActual  71: 1 op, 36146.00 ns, 36.1460 us/op
+I/DOTNET  : WorkloadActual  72: 1 op, 32395.00 ns, 32.3950 us/op
+I/DOTNET  : WorkloadActual  73: 1 op, 32500.00 ns, 32.5000 us/op
+I/DOTNET  : WorkloadActual  74: 1 op, 33229.00 ns, 33.2290 us/op
+I/DOTNET  : WorkloadActual  75: 1 op, 33958.00 ns, 33.9580 us/op
+I/DOTNET  : WorkloadActual  76: 1 op, 33489.00 ns, 33.4890 us/op
+I/DOTNET  : WorkloadActual  77: 1 op, 35052.00 ns, 35.0520 us/op
+I/DOTNET  : WorkloadActual  78: 1 op, 33802.00 ns, 33.8020 us/op
+I/DOTNET  : WorkloadActual  79: 1 op, 34687.00 ns, 34.6870 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 1 op, 35729.00 ns, 35.7290 us/op
+I/DOTNET  : WorkloadResult   2: 1 op, 33334.00 ns, 33.3340 us/op
+I/DOTNET  : WorkloadResult   3: 1 op, 28386.00 ns, 28.3860 us/op
+I/DOTNET  : WorkloadResult   4: 1 op, 33438.00 ns, 33.4380 us/op
+I/DOTNET  : WorkloadResult   5: 1 op, 33959.00 ns, 33.9590 us/op
+I/DOTNET  : WorkloadResult   6: 1 op, 35417.00 ns, 35.4170 us/op
+I/DOTNET  : WorkloadResult   7: 1 op, 34688.00 ns, 34.6880 us/op
+I/DOTNET  : WorkloadResult   8: 1 op, 35104.00 ns, 35.1040 us/op
+I/DOTNET  : WorkloadResult   9: 1 op, 30990.00 ns, 30.9900 us/op
+I/DOTNET  : WorkloadResult  10: 1 op, 32032.00 ns, 32.0320 us/op
+I/DOTNET  : WorkloadResult  11: 1 op, 35105.00 ns, 35.1050 us/op
+I/DOTNET  : WorkloadResult  12: 1 op, 35157.00 ns, 35.1570 us/op
+I/DOTNET  : WorkloadResult  13: 1 op, 31823.00 ns, 31.8230 us/op
+I/DOTNET  : WorkloadResult  14: 1 op, 32917.00 ns, 32.9170 us/op
+I/DOTNET  : WorkloadResult  15: 1 op, 31563.00 ns, 31.5630 us/op
+I/DOTNET  : WorkloadResult  16: 1 op, 32813.00 ns, 32.8130 us/op
+I/DOTNET  : WorkloadResult  17: 1 op, 32188.00 ns, 32.1880 us/op
+I/DOTNET  : WorkloadResult  18: 1 op, 31198.00 ns, 31.1980 us/op
+I/DOTNET  : WorkloadResult  19: 1 op, 33021.00 ns, 33.0210 us/op
+I/DOTNET  : WorkloadResult  20: 1 op, 31042.00 ns, 31.0420 us/op
+I/DOTNET  : WorkloadResult  21: 1 op, 36303.00 ns, 36.3030 us/op
+I/DOTNET  : WorkloadResult  22: 1 op, 34376.00 ns, 34.3760 us/op
+I/DOTNET  : WorkloadResult  23: 1 op, 33750.00 ns, 33.7500 us/op
+I/DOTNET  : WorkloadResult  24: 1 op, 37605.00 ns, 37.6050 us/op
+I/DOTNET  : WorkloadResult  25: 1 op, 34011.00 ns, 34.0110 us/op
+I/DOTNET  : WorkloadResult  26: 1 op, 36928.00 ns, 36.9280 us/op
+I/DOTNET  : WorkloadResult  27: 1 op, 34948.00 ns, 34.9480 us/op
+I/DOTNET  : WorkloadResult  28: 1 op, 31927.00 ns, 31.9270 us/op
+I/DOTNET  : WorkloadResult  29: 1 op, 32448.00 ns, 32.4480 us/op
+I/DOTNET  : WorkloadResult  30: 1 op, 34427.00 ns, 34.4270 us/op
+I/DOTNET  : WorkloadResult  31: 1 op, 35521.00 ns, 35.5210 us/op
+I/DOTNET  : WorkloadResult  32: 1 op, 36667.00 ns, 36.6670 us/op
+I/DOTNET  : WorkloadResult  33: 1 op, 35416.00 ns, 35.4160 us/op
+I/DOTNET  : WorkloadResult  34: 1 op, 36719.00 ns, 36.7190 us/op
+I/DOTNET  : WorkloadResult  35: 1 op, 36198.00 ns, 36.1980 us/op
+I/DOTNET  : WorkloadResult  36: 1 op, 34636.00 ns, 34.6360 us/op
+I/DOTNET  : WorkloadResult  37: 1 op, 34792.00 ns, 34.7920 us/op
+I/DOTNET  : WorkloadResult  38: 1 op, 31824.00 ns, 31.8240 us/op
+I/DOTNET  : WorkloadResult  39: 1 op, 33906.00 ns, 33.9060 us/op
+I/DOTNET  : WorkloadResult  40: 1 op, 32292.00 ns, 32.2920 us/op
+I/DOTNET  : WorkloadResult  41: 1 op, 33021.00 ns, 33.0210 us/op
+I/DOTNET  : WorkloadResult  42: 1 op, 31198.00 ns, 31.1980 us/op
+I/DOTNET  : WorkloadResult  43: 1 op, 34011.00 ns, 34.0110 us/op
+I/DOTNET  : WorkloadResult  44: 1 op, 33854.00 ns, 33.8540 us/op
+I/DOTNET  : WorkloadResult  45: 1 op, 33281.00 ns, 33.2810 us/op
+I/DOTNET  : WorkloadResult  46: 1 op, 31823.00 ns, 31.8230 us/op
+I/DOTNET  : WorkloadResult  47: 1 op, 31146.00 ns, 31.1460 us/op
+I/DOTNET  : WorkloadResult  48: 1 op, 34375.00 ns, 34.3750 us/op
+I/DOTNET  : WorkloadResult  49: 1 op, 33229.00 ns, 33.2290 us/op
+I/DOTNET  : WorkloadResult  50: 1 op, 31355.00 ns, 31.3550 us/op
+I/DOTNET  : WorkloadResult  51: 1 op, 36615.00 ns, 36.6150 us/op
+I/DOTNET  : WorkloadResult  52: 1 op, 36719.00 ns, 36.7190 us/op
+I/DOTNET  : WorkloadResult  53: 1 op, 31198.00 ns, 31.1980 us/op
+I/DOTNET  : WorkloadResult  54: 1 op, 32917.00 ns, 32.9170 us/op
+I/DOTNET  : WorkloadResult  55: 1 op, 34844.00 ns, 34.8440 us/op
+I/DOTNET  : WorkloadResult  56: 1 op, 32136.00 ns, 32.1360 us/op
+I/DOTNET  : WorkloadResult  57: 1 op, 31979.00 ns, 31.9790 us/op
+I/DOTNET  : WorkloadResult  58: 1 op, 34323.00 ns, 34.3230 us/op
+I/DOTNET  : WorkloadResult  59: 1 op, 34428.00 ns, 34.4280 us/op
+I/DOTNET  : WorkloadResult  60: 1 op, 33959.00 ns, 33.9590 us/op
+I/DOTNET  : WorkloadResult  61: 1 op, 35105.00 ns, 35.1050 us/op
+I/DOTNET  : WorkloadResult  62: 1 op, 35677.00 ns, 35.6770 us/op
+I/DOTNET  : WorkloadResult  63: 1 op, 33646.00 ns, 33.6460 us/op
+I/DOTNET  : WorkloadResult  64: 1 op, 33281.00 ns, 33.2810 us/op
+I/DOTNET  : WorkloadResult  65: 1 op, 33698.00 ns, 33.6980 us/op
+I/DOTNET  : WorkloadResult  66: 1 op, 33698.00 ns, 33.6980 us/op
+I/DOTNET  : WorkloadResult  67: 1 op, 34583.00 ns, 34.5830 us/op
+I/DOTNET  : WorkloadResult  68: 1 op, 35729.00 ns, 35.7290 us/op
+I/DOTNET  : WorkloadResult  69: 1 op, 35417.00 ns, 35.4170 us/op
+I/DOTNET  : WorkloadResult  70: 1 op, 31666.00 ns, 31.6660 us/op
+I/DOTNET  : WorkloadResult  71: 1 op, 31771.00 ns, 31.7710 us/op
+I/DOTNET  : WorkloadResult  72: 1 op, 32500.00 ns, 32.5000 us/op
+I/DOTNET  : WorkloadResult  73: 1 op, 33229.00 ns, 33.2290 us/op
+I/DOTNET  : WorkloadResult  74: 1 op, 32760.00 ns, 32.7600 us/op
+I/DOTNET  : WorkloadResult  75: 1 op, 34323.00 ns, 34.3230 us/op
+I/DOTNET  : WorkloadResult  76: 1 op, 33073.00 ns, 33.0730 us/op
+I/DOTNET  : WorkloadResult  77: 1 op, 33958.00 ns, 33.9580 us/op
+I/DOTNET  : // GC:  0 0 0 5312 1
+I/DOTNET  : // Threading:  0 0 1
+I/DOTNET  : 
+I/DOTNET  : Mean = 33.703 us, StdErr = 0.201 us (0.60%), N = 77, StdDev = 1.765 us
+I/DOTNET  : Min = 28.386 us, Q1 = 32.292 us, Median = 33.750 us, Q3 = 34.948 us, Max = 37.605 us
+I/DOTNET  : IQR = 2.656 us, LowerFence = 28.308 us, UpperFence = 38.932 us
+I/DOTNET  : ConfidenceInterval = [33.014 us; 34.391 us] (CI 99.9%), Margin = 0.688 us (2.04% of Mean)
+I/DOTNET  : Skewness = -0.11, Kurtosis = 2.79, MValue = 3
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 7 (70.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:47 (0h 1m from now) **
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: SetBindingNoContext.Compiled_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 235885.00 ns, 235.8850 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 283073.00 ns, 283.0730 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadWarmup   2: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : OverheadWarmup   3: 1 op, 834.00 ns, 834.0000 ns/op
+I/DOTNET  : OverheadWarmup   4: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadWarmup   5: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadWarmup   6: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : OverheadWarmup   7: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadWarmup   8: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadWarmup   9: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual   2: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual   3: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual   4: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadActual   5: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual   6: 1 op, 834.00 ns, 834.0000 ns/op
+I/DOTNET  : OverheadActual   7: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual   8: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual   9: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual  10: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual  11: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual  12: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  13: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  14: 1 op, 1093.00 ns, 1.0930 us/op
+I/DOTNET  : OverheadActual  15: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : OverheadActual  16: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  17: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual  18: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  19: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  20: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 1 op, 30886.00 ns, 30.8860 us/op
+I/DOTNET  : WorkloadWarmup   2: 1 op, 27448.00 ns, 27.4480 us/op
+I/DOTNET  : WorkloadWarmup   3: 1 op, 26562.00 ns, 26.5620 us/op
+I/DOTNET  : WorkloadWarmup   4: 1 op, 27500.00 ns, 27.5000 us/op
+I/DOTNET  : WorkloadWarmup   5: 1 op, 26146.00 ns, 26.1460 us/op
+I/DOTNET  : WorkloadWarmup   6: 1 op, 27343.00 ns, 27.3430 us/op
+I/DOTNET  : WorkloadWarmup   7: 1 op, 27865.00 ns, 27.8650 us/op
+I/DOTNET  : WorkloadWarmup   8: 1 op, 26927.00 ns, 26.9270 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 1 op, 25157.00 ns, 25.1570 us/op
+I/DOTNET  : WorkloadActual   2: 1 op, 27083.00 ns, 27.0830 us/op
+I/DOTNET  : WorkloadActual   3: 1 op, 28594.00 ns, 28.5940 us/op
+I/DOTNET  : WorkloadActual   4: 1 op, 27708.00 ns, 27.7080 us/op
+I/DOTNET  : WorkloadActual   5: 1 op, 26563.00 ns, 26.5630 us/op
+I/DOTNET  : WorkloadActual   6: 1 op, 25313.00 ns, 25.3130 us/op
+I/DOTNET  : WorkloadActual   7: 1 op, 26719.00 ns, 26.7190 us/op
+I/DOTNET  : WorkloadActual   8: 1 op, 27084.00 ns, 27.0840 us/op
+I/DOTNET  : WorkloadActual   9: 1 op, 25000.00 ns, 25.0000 us/op
+I/DOTNET  : WorkloadActual  10: 1 op, 25417.00 ns, 25.4170 us/op
+I/DOTNET  : WorkloadActual  11: 1 op, 28386.00 ns, 28.3860 us/op
+I/DOTNET  : WorkloadActual  12: 1 op, 25990.00 ns, 25.9900 us/op
+I/DOTNET  : WorkloadActual  13: 1 op, 25833.00 ns, 25.8330 us/op
+I/DOTNET  : WorkloadActual  14: 1 op, 24480.00 ns, 24.4800 us/op
+I/DOTNET  : WorkloadActual  15: 1 op, 27968.00 ns, 27.9680 us/op
+I/DOTNET  : WorkloadActual  16: 1 op, 26771.00 ns, 26.7710 us/op
+I/DOTNET  : WorkloadActual  17: 1 op, 27553.00 ns, 27.5530 us/op
+I/DOTNET  : WorkloadActual  18: 1 op, 28177.00 ns, 28.1770 us/op
+I/DOTNET  : WorkloadActual  19: 1 op, 29844.00 ns, 29.8440 us/op
+I/DOTNET  : WorkloadActual  20: 1 op, 27656.00 ns, 27.6560 us/op
+I/DOTNET  : WorkloadActual  21: 1 op, 26198.00 ns, 26.1980 us/op
+I/DOTNET  : WorkloadActual  22: 1 op, 26823.00 ns, 26.8230 us/op
+I/DOTNET  : WorkloadActual  23: 1 op, 27761.00 ns, 27.7610 us/op
+I/DOTNET  : WorkloadActual  24: 1 op, 26302.00 ns, 26.3020 us/op
+I/DOTNET  : WorkloadActual  25: 1 op, 26458.00 ns, 26.4580 us/op
+I/DOTNET  : WorkloadActual  26: 1 op, 26614.00 ns, 26.6140 us/op
+I/DOTNET  : WorkloadActual  27: 1 op, 28541.00 ns, 28.5410 us/op
+I/DOTNET  : WorkloadActual  28: 1 op, 25156.00 ns, 25.1560 us/op
+I/DOTNET  : WorkloadActual  29: 1 op, 26146.00 ns, 26.1460 us/op
+I/DOTNET  : WorkloadActual  30: 1 op, 25937.00 ns, 25.9370 us/op
+I/DOTNET  : WorkloadActual  31: 1 op, 24166.00 ns, 24.1660 us/op
+I/DOTNET  : WorkloadActual  32: 1 op, 26354.00 ns, 26.3540 us/op
+I/DOTNET  : WorkloadActual  33: 1 op, 27656.00 ns, 27.6560 us/op
+I/DOTNET  : WorkloadActual  34: 1 op, 25573.00 ns, 25.5730 us/op
+I/DOTNET  : WorkloadActual  35: 1 op, 25834.00 ns, 25.8340 us/op
+I/DOTNET  : WorkloadActual  36: 1 op, 25209.00 ns, 25.2090 us/op
+I/DOTNET  : WorkloadActual  37: 1 op, 27916.00 ns, 27.9160 us/op
+I/DOTNET  : WorkloadActual  38: 1 op, 25052.00 ns, 25.0520 us/op
+I/DOTNET  : WorkloadActual  39: 1 op, 24375.00 ns, 24.3750 us/op
+I/DOTNET  : WorkloadActual  40: 1 op, 26146.00 ns, 26.1460 us/op
+I/DOTNET  : WorkloadActual  41: 1 op, 24791.00 ns, 24.7910 us/op
+I/DOTNET  : WorkloadActual  42: 1 op, 27083.00 ns, 27.0830 us/op
+I/DOTNET  : WorkloadActual  43: 1 op, 29375.00 ns, 29.3750 us/op
+I/DOTNET  : WorkloadActual  44: 1 op, 28229.00 ns, 28.2290 us/op
+I/DOTNET  : WorkloadActual  45: 1 op, 28490.00 ns, 28.4900 us/op
+I/DOTNET  : WorkloadActual  46: 1 op, 30781.00 ns, 30.7810 us/op
+I/DOTNET  : WorkloadActual  47: 1 op, 30886.00 ns, 30.8860 us/op
+I/DOTNET  : WorkloadActual  48: 1 op, 29011.00 ns, 29.0110 us/op
+I/DOTNET  : WorkloadActual  49: 1 op, 28385.00 ns, 28.3850 us/op
+I/DOTNET  : WorkloadActual  50: 1 op, 27344.00 ns, 27.3440 us/op
+I/DOTNET  : WorkloadActual  51: 1 op, 30572.00 ns, 30.5720 us/op
+I/DOTNET  : WorkloadActual  52: 1 op, 52292.00 ns, 52.2920 us/op
+I/DOTNET  : WorkloadActual  53: 1 op, 25989.00 ns, 25.9890 us/op
+I/DOTNET  : WorkloadActual  54: 1 op, 26406.00 ns, 26.4060 us/op
+I/DOTNET  : WorkloadActual  55: 1 op, 28073.00 ns, 28.0730 us/op
+I/DOTNET  : WorkloadActual  56: 1 op, 25937.00 ns, 25.9370 us/op
+I/DOTNET  : WorkloadActual  57: 1 op, 25937.00 ns, 25.9370 us/op
+I/DOTNET  : WorkloadActual  58: 1 op, 27604.00 ns, 27.6040 us/op
+I/DOTNET  : WorkloadActual  59: 1 op, 27448.00 ns, 27.4480 us/op
+I/DOTNET  : WorkloadActual  60: 1 op, 27135.00 ns, 27.1350 us/op
+I/DOTNET  : WorkloadActual  61: 1 op, 25521.00 ns, 25.5210 us/op
+I/DOTNET  : WorkloadActual  62: 1 op, 26198.00 ns, 26.1980 us/op
+I/DOTNET  : WorkloadActual  63: 1 op, 24636.00 ns, 24.6360 us/op
+I/DOTNET  : WorkloadActual  64: 1 op, 28541.00 ns, 28.5410 us/op
+I/DOTNET  : WorkloadActual  65: 1 op, 25937.00 ns, 25.9370 us/op
+I/DOTNET  : WorkloadActual  66: 1 op, 25261.00 ns, 25.2610 us/op
+I/DOTNET  : WorkloadActual  67: 1 op, 27447.00 ns, 27.4470 us/op
+I/DOTNET  : WorkloadActual  68: 1 op, 27604.00 ns, 27.6040 us/op
+I/DOTNET  : WorkloadActual  69: 1 op, 27396.00 ns, 27.3960 us/op
+I/DOTNET  : WorkloadActual  70: 1 op, 25261.00 ns, 25.2610 us/op
+I/DOTNET  : WorkloadActual  71: 1 op, 30677.00 ns, 30.6770 us/op
+I/DOTNET  : WorkloadActual  72: 1 op, 26771.00 ns, 26.7710 us/op
+I/DOTNET  : WorkloadActual  73: 1 op, 25469.00 ns, 25.4690 us/op
+I/DOTNET  : WorkloadActual  74: 1 op, 25000.00 ns, 25.0000 us/op
+I/DOTNET  : WorkloadActual  75: 1 op, 24010.00 ns, 24.0100 us/op
+I/DOTNET  : WorkloadActual  76: 1 op, 24375.00 ns, 24.3750 us/op
+I/DOTNET  : WorkloadActual  77: 1 op, 26146.00 ns, 26.1460 us/op
+I/DOTNET  : WorkloadActual  78: 1 op, 25573.00 ns, 25.5730 us/op
+I/DOTNET  : WorkloadActual  79: 1 op, 24636.00 ns, 24.6360 us/op
+I/DOTNET  : WorkloadActual  80: 1 op, 24480.00 ns, 24.4800 us/op
+I/DOTNET  : WorkloadActual  81: 1 op, 29166.00 ns, 29.1660 us/op
+I/DOTNET  : WorkloadActual  82: 1 op, 26771.00 ns, 26.7710 us/op
+I/DOTNET  : WorkloadActual  83: 1 op, 27084.00 ns, 27.0840 us/op
+I/DOTNET  : WorkloadActual  84: 1 op, 25990.00 ns, 25.9900 us/op
+I/DOTNET  : WorkloadActual  85: 1 op, 24114.00 ns, 24.1140 us/op
+I/DOTNET  : WorkloadActual  86: 1 op, 26823.00 ns, 26.8230 us/op
+I/DOTNET  : WorkloadActual  87: 1 op, 28073.00 ns, 28.0730 us/op
+I/DOTNET  : WorkloadActual  88: 1 op, 28021.00 ns, 28.0210 us/op
+I/DOTNET  : WorkloadActual  89: 1 op, 26458.00 ns, 26.4580 us/op
+I/DOTNET  : WorkloadActual  90: 1 op, 26563.00 ns, 26.5630 us/op
+I/DOTNET  : WorkloadActual  91: 1 op, 25625.00 ns, 25.6250 us/op
+I/DOTNET  : WorkloadActual  92: 1 op, 44115.00 ns, 44.1150 us/op
+I/DOTNET  : WorkloadActual  93: 1 op, 25937.00 ns, 25.9370 us/op
+I/DOTNET  : WorkloadActual  94: 1 op, 25052.00 ns, 25.0520 us/op
+I/DOTNET  : WorkloadActual  95: 1 op, 24948.00 ns, 24.9480 us/op
+I/DOTNET  : WorkloadActual  96: 1 op, 26563.00 ns, 26.5630 us/op
+I/DOTNET  : WorkloadActual  97: 1 op, 27656.00 ns, 27.6560 us/op
+I/DOTNET  : WorkloadActual  98: 1 op, 25365.00 ns, 25.3650 us/op
+I/DOTNET  : WorkloadActual  99: 1 op, 27031.00 ns, 27.0310 us/op
+I/DOTNET  : WorkloadActual  100: 1 op, 28021.00 ns, 28.0210 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 1 op, 24297.50 ns, 24.2975 us/op
+I/DOTNET  : WorkloadResult   2: 1 op, 26223.50 ns, 26.2235 us/op
+I/DOTNET  : WorkloadResult   3: 1 op, 27734.50 ns, 27.7345 us/op
+I/DOTNET  : WorkloadResult   4: 1 op, 26848.50 ns, 26.8485 us/op
+I/DOTNET  : WorkloadResult   5: 1 op, 25703.50 ns, 25.7035 us/op
+I/DOTNET  : WorkloadResult   6: 1 op, 24453.50 ns, 24.4535 us/op
+I/DOTNET  : WorkloadResult   7: 1 op, 25859.50 ns, 25.8595 us/op
+I/DOTNET  : WorkloadResult   8: 1 op, 26224.50 ns, 26.2245 us/op
+I/DOTNET  : WorkloadResult   9: 1 op, 24140.50 ns, 24.1405 us/op
+I/DOTNET  : WorkloadResult  10: 1 op, 24557.50 ns, 24.5575 us/op
+I/DOTNET  : WorkloadResult  11: 1 op, 27526.50 ns, 27.5265 us/op
+I/DOTNET  : WorkloadResult  12: 1 op, 25130.50 ns, 25.1305 us/op
+I/DOTNET  : WorkloadResult  13: 1 op, 24973.50 ns, 24.9735 us/op
+I/DOTNET  : WorkloadResult  14: 1 op, 23620.50 ns, 23.6205 us/op
+I/DOTNET  : WorkloadResult  15: 1 op, 27108.50 ns, 27.1085 us/op
+I/DOTNET  : WorkloadResult  16: 1 op, 25911.50 ns, 25.9115 us/op
+I/DOTNET  : WorkloadResult  17: 1 op, 26693.50 ns, 26.6935 us/op
+I/DOTNET  : WorkloadResult  18: 1 op, 27317.50 ns, 27.3175 us/op
+I/DOTNET  : WorkloadResult  19: 1 op, 28984.50 ns, 28.9845 us/op
+I/DOTNET  : WorkloadResult  20: 1 op, 26796.50 ns, 26.7965 us/op
+I/DOTNET  : WorkloadResult  21: 1 op, 25338.50 ns, 25.3385 us/op
+I/DOTNET  : WorkloadResult  22: 1 op, 25963.50 ns, 25.9635 us/op
+I/DOTNET  : WorkloadResult  23: 1 op, 26901.50 ns, 26.9015 us/op
+I/DOTNET  : WorkloadResult  24: 1 op, 25442.50 ns, 25.4425 us/op
+I/DOTNET  : WorkloadResult  25: 1 op, 25598.50 ns, 25.5985 us/op
+I/DOTNET  : WorkloadResult  26: 1 op, 25754.50 ns, 25.7545 us/op
+I/DOTNET  : WorkloadResult  27: 1 op, 27681.50 ns, 27.6815 us/op
+I/DOTNET  : WorkloadResult  28: 1 op, 24296.50 ns, 24.2965 us/op
+I/DOTNET  : WorkloadResult  29: 1 op, 25286.50 ns, 25.2865 us/op
+I/DOTNET  : WorkloadResult  30: 1 op, 25077.50 ns, 25.0775 us/op
+I/DOTNET  : WorkloadResult  31: 1 op, 23306.50 ns, 23.3065 us/op
+I/DOTNET  : WorkloadResult  32: 1 op, 25494.50 ns, 25.4945 us/op
+I/DOTNET  : WorkloadResult  33: 1 op, 26796.50 ns, 26.7965 us/op
+I/DOTNET  : WorkloadResult  34: 1 op, 24713.50 ns, 24.7135 us/op
+I/DOTNET  : WorkloadResult  35: 1 op, 24974.50 ns, 24.9745 us/op
+I/DOTNET  : WorkloadResult  36: 1 op, 24349.50 ns, 24.3495 us/op
+I/DOTNET  : WorkloadResult  37: 1 op, 27056.50 ns, 27.0565 us/op
+I/DOTNET  : WorkloadResult  38: 1 op, 24192.50 ns, 24.1925 us/op
+I/DOTNET  : WorkloadResult  39: 1 op, 23515.50 ns, 23.5155 us/op
+I/DOTNET  : WorkloadResult  40: 1 op, 25286.50 ns, 25.2865 us/op
+I/DOTNET  : WorkloadResult  41: 1 op, 23931.50 ns, 23.9315 us/op
+I/DOTNET  : WorkloadResult  42: 1 op, 26223.50 ns, 26.2235 us/op
+I/DOTNET  : WorkloadResult  43: 1 op, 28515.50 ns, 28.5155 us/op
+I/DOTNET  : WorkloadResult  44: 1 op, 27369.50 ns, 27.3695 us/op
+I/DOTNET  : WorkloadResult  45: 1 op, 27630.50 ns, 27.6305 us/op
+I/DOTNET  : WorkloadResult  46: 1 op, 29921.50 ns, 29.9215 us/op
+I/DOTNET  : WorkloadResult  47: 1 op, 30026.50 ns, 30.0265 us/op
+I/DOTNET  : WorkloadResult  48: 1 op, 28151.50 ns, 28.1515 us/op
+I/DOTNET  : WorkloadResult  49: 1 op, 27525.50 ns, 27.5255 us/op
+I/DOTNET  : WorkloadResult  50: 1 op, 26484.50 ns, 26.4845 us/op
+I/DOTNET  : WorkloadResult  51: 1 op, 29712.50 ns, 29.7125 us/op
+I/DOTNET  : WorkloadResult  52: 1 op, 25129.50 ns, 25.1295 us/op
+I/DOTNET  : WorkloadResult  53: 1 op, 25546.50 ns, 25.5465 us/op
+I/DOTNET  : WorkloadResult  54: 1 op, 27213.50 ns, 27.2135 us/op
+I/DOTNET  : WorkloadResult  55: 1 op, 25077.50 ns, 25.0775 us/op
+I/DOTNET  : WorkloadResult  56: 1 op, 25077.50 ns, 25.0775 us/op
+I/DOTNET  : WorkloadResult  57: 1 op, 26744.50 ns, 26.7445 us/op
+I/DOTNET  : WorkloadResult  58: 1 op, 26588.50 ns, 26.5885 us/op
+I/DOTNET  : WorkloadResult  59: 1 op, 26275.50 ns, 26.2755 us/op
+I/DOTNET  : WorkloadResult  60: 1 op, 24661.50 ns, 24.6615 us/op
+I/DOTNET  : WorkloadResult  61: 1 op, 25338.50 ns, 25.3385 us/op
+I/DOTNET  : WorkloadResult  62: 1 op, 23776.50 ns, 23.7765 us/op
+I/DOTNET  : WorkloadResult  63: 1 op, 27681.50 ns, 27.6815 us/op
+I/DOTNET  : WorkloadResult  64: 1 op, 25077.50 ns, 25.0775 us/op
+I/DOTNET  : WorkloadResult  65: 1 op, 24401.50 ns, 24.4015 us/op
+I/DOTNET  : WorkloadResult  66: 1 op, 26587.50 ns, 26.5875 us/op
+I/DOTNET  : WorkloadResult  67: 1 op, 26744.50 ns, 26.7445 us/op
+I/DOTNET  : WorkloadResult  68: 1 op, 26536.50 ns, 26.5365 us/op
+I/DOTNET  : WorkloadResult  69: 1 op, 24401.50 ns, 24.4015 us/op
+I/DOTNET  : WorkloadResult  70: 1 op, 29817.50 ns, 29.8175 us/op
+I/DOTNET  : WorkloadResult  71: 1 op, 25911.50 ns, 25.9115 us/op
+I/DOTNET  : WorkloadResult  72: 1 op, 24609.50 ns, 24.6095 us/op
+I/DOTNET  : WorkloadResult  73: 1 op, 24140.50 ns, 24.1405 us/op
+I/DOTNET  : WorkloadResult  74: 1 op, 23150.50 ns, 23.1505 us/op
+I/DOTNET  : WorkloadResult  75: 1 op, 23515.50 ns, 23.5155 us/op
+I/DOTNET  : WorkloadResult  76: 1 op, 25286.50 ns, 25.2865 us/op
+I/DOTNET  : WorkloadResult  77: 1 op, 24713.50 ns, 24.7135 us/op
+I/DOTNET  : WorkloadResult  78: 1 op, 23776.50 ns, 23.7765 us/op
+I/DOTNET  : WorkloadResult  79: 1 op, 23620.50 ns, 23.6205 us/op
+I/DOTNET  : WorkloadResult  80: 1 op, 28306.50 ns, 28.3065 us/op
+I/DOTNET  : WorkloadResult  81: 1 op, 25911.50 ns, 25.9115 us/op
+I/DOTNET  : WorkloadResult  82: 1 op, 26224.50 ns, 26.2245 us/op
+I/DOTNET  : WorkloadResult  83: 1 op, 25130.50 ns, 25.1305 us/op
+I/DOTNET  : WorkloadResult  84: 1 op, 23254.50 ns, 23.2545 us/op
+I/DOTNET  : WorkloadResult  85: 1 op, 25963.50 ns, 25.9635 us/op
+I/DOTNET  : WorkloadResult  86: 1 op, 27213.50 ns, 27.2135 us/op
+I/DOTNET  : WorkloadResult  87: 1 op, 27161.50 ns, 27.1615 us/op
+I/DOTNET  : WorkloadResult  88: 1 op, 25598.50 ns, 25.5985 us/op
+I/DOTNET  : WorkloadResult  89: 1 op, 25703.50 ns, 25.7035 us/op
+I/DOTNET  : WorkloadResult  90: 1 op, 24765.50 ns, 24.7655 us/op
+I/DOTNET  : WorkloadResult  91: 1 op, 25077.50 ns, 25.0775 us/op
+I/DOTNET  : WorkloadResult  92: 1 op, 24192.50 ns, 24.1925 us/op
+I/DOTNET  : WorkloadResult  93: 1 op, 24088.50 ns, 24.0885 us/op
+I/DOTNET  : WorkloadResult  94: 1 op, 25703.50 ns, 25.7035 us/op
+I/DOTNET  : WorkloadResult  95: 1 op, 26796.50 ns, 26.7965 us/op
+I/DOTNET  : WorkloadResult  96: 1 op, 24505.50 ns, 24.5055 us/op
+I/DOTNET  : WorkloadResult  97: 1 op, 26171.50 ns, 26.1715 us/op
+I/DOTNET  : WorkloadResult  98: 1 op, 27161.50 ns, 27.1615 us/op
+I/DOTNET  : // GC:  0 0 0 4736 1
+I/DOTNET  : // Threading:  0 0 1
+I/DOTNET  : 
+I/DOTNET  : Mean = 25.847 us, StdErr = 0.158 us (0.61%), N = 98, StdDev = 1.560 us
+I/DOTNET  : Min = 23.151 us, Q1 = 24.674 us, Median = 25.703 us, Q3 = 26.797 us, Max = 30.027 us
+I/DOTNET  : IQR = 2.122 us, LowerFence = 21.491 us, UpperFence = 29.980 us
+I/DOTNET  : ConfidenceInterval = [25.312 us; 26.381 us] (CI 99.9%), Margin = 0.535 us (2.07% of Mean)
+I/DOTNET  : Skewness = 0.57, Kurtosis = 3.01, MValue = 2.86
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 6 (60.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:46 (0h 1m from now) **
+I/DOTNET  : // ***** BenchmarkRunner: Finish  *****
+I/DOTNET  : 
+I/DOTNET  : // * Export *
+I/DOTNET  : 
+I/DOTNET  : // * Detailed results *
+I/DOTNET  : SetBindingNoContext.Compiled_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 25.847 us, StdErr = 0.158 us (0.61%), N = 98, StdDev = 1.560 us
+I/DOTNET  : Min = 23.151 us, Q1 = 24.674 us, Median = 25.703 us, Q3 = 26.797 us, Max = 30.027 us
+I/DOTNET  : IQR = 2.122 us, LowerFence = 21.491 us, UpperFence = 29.980 us
+I/DOTNET  : ConfidenceInterval = [25.312 us; 26.381 us] (CI 99.9%), Margin = 0.535 us (2.07% of Mean)
+I/DOTNET  : Skewness = 0.57, Kurtosis = 3.01, MValue = 2.86
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [23.097 us ; 24.087 us) | @@@@@@@@@@
+I/DOTNET  : [24.087 us ; 25.076 us) | @@@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [25.076 us ; 25.965 us) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [25.965 us ; 27.371 us) | @@@@@@@@@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [27.371 us ; 28.360 us) | @@@@@@@@
+I/DOTNET  : [28.360 us ; 29.425 us) | @@
+I/DOTNET  : [29.425 us ; 30.471 us) | @@@@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : SetBindingNoContext.Classic_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 33.703 us, StdErr = 0.201 us (0.60%), N = 77, StdDev = 1.765 us
+I/DOTNET  : Min = 28.386 us, Q1 = 32.292 us, Median = 33.750 us, Q3 = 34.948 us, Max = 37.605 us
+I/DOTNET  : IQR = 2.656 us, LowerFence = 28.308 us, UpperFence = 38.932 us
+I/DOTNET  : ConfidenceInterval = [33.014 us; 34.391 us] (CI 99.9%), Margin = 0.688 us (2.04% of Mean)
+I/DOTNET  : Skewness = -0.11, Kurtosis = 2.79, MValue = 3
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [27.842 us ; 28.930 us) | @
+I/DOTNET  : [28.930 us ; 30.019 us) | 
+I/DOTNET  : [30.019 us ; 31.123 us) | @@
+I/DOTNET  : [31.123 us ; 32.211 us) | @@@@@@@@@@@@@@@@
+I/DOTNET  : [32.211 us ; 32.972 us) | @@@@@@@
+I/DOTNET  : [32.972 us ; 34.060 us) | @@@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [34.060 us ; 35.440 us) | @@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [35.440 us ; 36.742 us) | @@@@@@@@@@
+I/DOTNET  : [36.742 us ; 37.811 us) | @@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : // * Summary *
+I/DOTNET  : 
+I/DOTNET  : BenchmarkDotNet v0.14.0, Unknown 
+I/DOTNET  : Unknown processor
+I/DOTNET  :   [Host] : .NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : 
+I/DOTNET  : Toolchain=InProcessEmitToolchain  InvocationCount=1  UnrollFactor=1  
+I/DOTNET  : 
+I/DOTNET  : | Method              | Mean     | Error    | StdDev   | Ratio | RatioSD | Allocated | Alloc Ratio |
+I/DOTNET  : |-------------------- |---------:|---------:|---------:|------:|--------:|----------:|------------:|
+I/DOTNET  : | Compiled_SetBinding | 25.85 us | 0.535 us | 1.560 us |  0.77 |    0.06 |         - |          NA |
+I/DOTNET  : | Classic_SetBinding  | 33.70 us | 0.688 us | 1.765 us |  1.00 |    0.07 |         - |          NA |
+I/DOTNET  : 
+I/DOTNET  : // * Legends *
+I/DOTNET  :   Mean        : Arithmetic mean of all measurements
+I/DOTNET  :   Error       : Half of 99.9% confidence interval
+I/DOTNET  :   StdDev      : Standard deviation of all measurements
+I/DOTNET  :   Ratio       : Mean of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   RatioSD     : Standard deviation of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   Allocated   : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+I/DOTNET  :   Alloc Ratio : Allocated memory ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   1 us        : 1 Microsecond (0.000001 sec)
+I/DOTNET  : 
+I/DOTNET  : // * Diagnostic Output - MemoryDiagnoser *
+I/DOTNET  : 
+I/DOTNET  : 
+I/DOTNET  : // ***** BenchmarkRunner: End *****
+I/DOTNET  : Run time: 00:00:06 (6.57 sec), executed benchmarks: 2
+I/DOTNET  : 
+I/DOTNET  : // Found 2 benchmarks:
+I/DOTNET  : //   SetBinding.Classic_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : //   SetBinding.Compiled_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: SetBinding.Classic_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 199428.00 ns, 199.4280 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 2327917.00 ns, 2.3279 ms/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadWarmup   2: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadWarmup   3: 1 op, 1094.00 ns, 1.0940 us/op
+I/DOTNET  : OverheadWarmup   4: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadWarmup   5: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadWarmup   6: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual   2: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual   3: 1 op, 677.00 ns, 677.0000 ns/op
+I/DOTNET  : OverheadActual   4: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual   5: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual   6: 1 op, 1094.00 ns, 1.0940 us/op
+I/DOTNET  : OverheadActual   7: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual   8: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual   9: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual  10: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  11: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  12: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  13: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  14: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  15: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual  16: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual  17: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadActual  18: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  19: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  20: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 1 op, 79688.00 ns, 79.6880 us/op
+I/DOTNET  : WorkloadWarmup   2: 1 op, 72187.00 ns, 72.1870 us/op
+I/DOTNET  : WorkloadWarmup   3: 1 op, 71146.00 ns, 71.1460 us/op
+I/DOTNET  : WorkloadWarmup   4: 1 op, 71822.00 ns, 71.8220 us/op
+I/DOTNET  : WorkloadWarmup   5: 1 op, 69688.00 ns, 69.6880 us/op
+I/DOTNET  : WorkloadWarmup   6: 1 op, 71302.00 ns, 71.3020 us/op
+I/DOTNET  : WorkloadWarmup   7: 1 op, 71979.00 ns, 71.9790 us/op
+I/DOTNET  : WorkloadWarmup   8: 1 op, 72344.00 ns, 72.3440 us/op
+I/DOTNET  : WorkloadWarmup   9: 1 op, 70052.00 ns, 70.0520 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 1 op, 71041.00 ns, 71.0410 us/op
+I/DOTNET  : WorkloadActual   2: 1 op, 72135.00 ns, 72.1350 us/op
+I/DOTNET  : WorkloadActual   3: 1 op, 70885.00 ns, 70.8850 us/op
+I/DOTNET  : WorkloadActual   4: 1 op, 66094.00 ns, 66.0940 us/op
+I/DOTNET  : WorkloadActual   5: 1 op, 67292.00 ns, 67.2920 us/op
+I/DOTNET  : WorkloadActual   6: 1 op, 86823.00 ns, 86.8230 us/op
+I/DOTNET  : WorkloadActual   7: 1 op, 70261.00 ns, 70.2610 us/op
+I/DOTNET  : WorkloadActual   8: 1 op, 64323.00 ns, 64.3230 us/op
+I/DOTNET  : WorkloadActual   9: 1 op, 66667.00 ns, 66.6670 us/op
+I/DOTNET  : WorkloadActual  10: 1 op, 67813.00 ns, 67.8130 us/op
+I/DOTNET  : WorkloadActual  11: 1 op, 65313.00 ns, 65.3130 us/op
+I/DOTNET  : WorkloadActual  12: 1 op, 76510.00 ns, 76.5100 us/op
+I/DOTNET  : WorkloadActual  13: 1 op, 68906.00 ns, 68.9060 us/op
+I/DOTNET  : WorkloadActual  14: 1 op, 69532.00 ns, 69.5320 us/op
+I/DOTNET  : WorkloadActual  15: 1 op, 68854.00 ns, 68.8540 us/op
+I/DOTNET  : WorkloadActual  16: 1 op, 65000.00 ns, 65.0000 us/op
+I/DOTNET  : WorkloadActual  17: 1 op, 69323.00 ns, 69.3230 us/op
+I/DOTNET  : WorkloadActual  18: 1 op, 71875.00 ns, 71.8750 us/op
+I/DOTNET  : WorkloadActual  19: 1 op, 69322.00 ns, 69.3220 us/op
+I/DOTNET  : WorkloadActual  20: 1 op, 73438.00 ns, 73.4380 us/op
+I/DOTNET  : WorkloadActual  21: 1 op, 69896.00 ns, 69.8960 us/op
+I/DOTNET  : WorkloadActual  22: 1 op, 67291.00 ns, 67.2910 us/op
+I/DOTNET  : WorkloadActual  23: 1 op, 69115.00 ns, 69.1150 us/op
+I/DOTNET  : WorkloadActual  24: 1 op, 73125.00 ns, 73.1250 us/op
+I/DOTNET  : WorkloadActual  25: 1 op, 70000.00 ns, 70.0000 us/op
+I/DOTNET  : WorkloadActual  26: 1 op, 70365.00 ns, 70.3650 us/op
+I/DOTNET  : WorkloadActual  27: 1 op, 69167.00 ns, 69.1670 us/op
+I/DOTNET  : WorkloadActual  28: 1 op, 69583.00 ns, 69.5830 us/op
+I/DOTNET  : WorkloadActual  29: 1 op, 64479.00 ns, 64.4790 us/op
+I/DOTNET  : WorkloadActual  30: 1 op, 63594.00 ns, 63.5940 us/op
+I/DOTNET  : WorkloadActual  31: 1 op, 68333.00 ns, 68.3330 us/op
+I/DOTNET  : WorkloadActual  32: 1 op, 67604.00 ns, 67.6040 us/op
+I/DOTNET  : WorkloadActual  33: 1 op, 68542.00 ns, 68.5420 us/op
+I/DOTNET  : WorkloadActual  34: 1 op, 70104.00 ns, 70.1040 us/op
+I/DOTNET  : WorkloadActual  35: 1 op, 68073.00 ns, 68.0730 us/op
+I/DOTNET  : WorkloadActual  36: 1 op, 69011.00 ns, 69.0110 us/op
+I/DOTNET  : WorkloadActual  37: 1 op, 71406.00 ns, 71.4060 us/op
+I/DOTNET  : WorkloadActual  38: 1 op, 70781.00 ns, 70.7810 us/op
+I/DOTNET  : WorkloadActual  39: 1 op, 69740.00 ns, 69.7400 us/op
+I/DOTNET  : WorkloadActual  40: 1 op, 70104.00 ns, 70.1040 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 1 op, 70104.00 ns, 70.1040 us/op
+I/DOTNET  : WorkloadResult   2: 1 op, 71198.00 ns, 71.1980 us/op
+I/DOTNET  : WorkloadResult   3: 1 op, 69948.00 ns, 69.9480 us/op
+I/DOTNET  : WorkloadResult   4: 1 op, 65157.00 ns, 65.1570 us/op
+I/DOTNET  : WorkloadResult   5: 1 op, 66355.00 ns, 66.3550 us/op
+I/DOTNET  : WorkloadResult   6: 1 op, 69324.00 ns, 69.3240 us/op
+I/DOTNET  : WorkloadResult   7: 1 op, 63386.00 ns, 63.3860 us/op
+I/DOTNET  : WorkloadResult   8: 1 op, 65730.00 ns, 65.7300 us/op
+I/DOTNET  : WorkloadResult   9: 1 op, 66876.00 ns, 66.8760 us/op
+I/DOTNET  : WorkloadResult  10: 1 op, 64376.00 ns, 64.3760 us/op
+I/DOTNET  : WorkloadResult  11: 1 op, 67969.00 ns, 67.9690 us/op
+I/DOTNET  : WorkloadResult  12: 1 op, 68595.00 ns, 68.5950 us/op
+I/DOTNET  : WorkloadResult  13: 1 op, 67917.00 ns, 67.9170 us/op
+I/DOTNET  : WorkloadResult  14: 1 op, 64063.00 ns, 64.0630 us/op
+I/DOTNET  : WorkloadResult  15: 1 op, 68386.00 ns, 68.3860 us/op
+I/DOTNET  : WorkloadResult  16: 1 op, 70938.00 ns, 70.9380 us/op
+I/DOTNET  : WorkloadResult  17: 1 op, 68385.00 ns, 68.3850 us/op
+I/DOTNET  : WorkloadResult  18: 1 op, 72501.00 ns, 72.5010 us/op
+I/DOTNET  : WorkloadResult  19: 1 op, 68959.00 ns, 68.9590 us/op
+I/DOTNET  : WorkloadResult  20: 1 op, 66354.00 ns, 66.3540 us/op
+I/DOTNET  : WorkloadResult  21: 1 op, 68178.00 ns, 68.1780 us/op
+I/DOTNET  : WorkloadResult  22: 1 op, 72188.00 ns, 72.1880 us/op
+I/DOTNET  : WorkloadResult  23: 1 op, 69063.00 ns, 69.0630 us/op
+I/DOTNET  : WorkloadResult  24: 1 op, 69428.00 ns, 69.4280 us/op
+I/DOTNET  : WorkloadResult  25: 1 op, 68230.00 ns, 68.2300 us/op
+I/DOTNET  : WorkloadResult  26: 1 op, 68646.00 ns, 68.6460 us/op
+I/DOTNET  : WorkloadResult  27: 1 op, 63542.00 ns, 63.5420 us/op
+I/DOTNET  : WorkloadResult  28: 1 op, 62657.00 ns, 62.6570 us/op
+I/DOTNET  : WorkloadResult  29: 1 op, 67396.00 ns, 67.3960 us/op
+I/DOTNET  : WorkloadResult  30: 1 op, 66667.00 ns, 66.6670 us/op
+I/DOTNET  : WorkloadResult  31: 1 op, 67605.00 ns, 67.6050 us/op
+I/DOTNET  : WorkloadResult  32: 1 op, 69167.00 ns, 69.1670 us/op
+I/DOTNET  : WorkloadResult  33: 1 op, 67136.00 ns, 67.1360 us/op
+I/DOTNET  : WorkloadResult  34: 1 op, 68074.00 ns, 68.0740 us/op
+I/DOTNET  : WorkloadResult  35: 1 op, 70469.00 ns, 70.4690 us/op
+I/DOTNET  : WorkloadResult  36: 1 op, 69844.00 ns, 69.8440 us/op
+I/DOTNET  : WorkloadResult  37: 1 op, 68803.00 ns, 68.8030 us/op
+I/DOTNET  : WorkloadResult  38: 1 op, 69167.00 ns, 69.1670 us/op
+I/DOTNET  : // GC:  0 0 0 5808 1
+I/DOTNET  : // Threading:  0 0 1
+I/DOTNET  : 
+I/DOTNET  : Mean = 67.968 us, StdErr = 0.383 us (0.56%), N = 38, StdDev = 2.360 us
+I/DOTNET  : Min = 62.657 us, Q1 = 66.719 us, Median = 68.308 us, Q3 = 69.285 us, Max = 72.501 us
+I/DOTNET  : IQR = 2.566 us, LowerFence = 62.871 us, UpperFence = 73.133 us
+I/DOTNET  : ConfidenceInterval = [66.600 us; 69.336 us] (CI 99.9%), Margin = 1.368 us (2.01% of Mean)
+I/DOTNET  : Skewness = -0.41, Kurtosis = 2.68, MValue = 2.25
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 5 (50.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:46 (0h 0m from now) **
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: SetBinding.Compiled_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 257656.00 ns, 257.6560 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 299583.00 ns, 299.5830 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadWarmup   2: 1 op, 1094.00 ns, 1.0940 us/op
+I/DOTNET  : OverheadWarmup   3: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadWarmup   4: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadWarmup   5: 1 op, 1146.00 ns, 1.1460 us/op
+I/DOTNET  : OverheadWarmup   6: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 1 op, 1302.00 ns, 1.3020 us/op
+I/DOTNET  : OverheadActual   2: 1 op, 1458.00 ns, 1.4580 us/op
+I/DOTNET  : OverheadActual   3: 1 op, 1094.00 ns, 1.0940 us/op
+I/DOTNET  : OverheadActual   4: 1 op, 1250.00 ns, 1.2500 us/op
+I/DOTNET  : OverheadActual   5: 1 op, 1250.00 ns, 1.2500 us/op
+I/DOTNET  : OverheadActual   6: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual   7: 1 op, 1093.00 ns, 1.0930 us/op
+I/DOTNET  : OverheadActual   8: 1 op, 1303.00 ns, 1.3030 us/op
+I/DOTNET  : OverheadActual   9: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual  10: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  11: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  12: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual  13: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  14: 1 op, 1146.00 ns, 1.1460 us/op
+I/DOTNET  : OverheadActual  15: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  16: 1 op, 1146.00 ns, 1.1460 us/op
+I/DOTNET  : OverheadActual  17: 1 op, 782.00 ns, 782.0000 ns/op
+I/DOTNET  : OverheadActual  18: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  19: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadActual  20: 1 op, 625.00 ns, 625.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 1 op, 33490.00 ns, 33.4900 us/op
+I/DOTNET  : WorkloadWarmup   2: 1 op, 31511.00 ns, 31.5110 us/op
+I/DOTNET  : WorkloadWarmup   3: 1 op, 28229.00 ns, 28.2290 us/op
+I/DOTNET  : WorkloadWarmup   4: 1 op, 27292.00 ns, 27.2920 us/op
+I/DOTNET  : WorkloadWarmup   5: 1 op, 26459.00 ns, 26.4590 us/op
+I/DOTNET  : WorkloadWarmup   6: 1 op, 28750.00 ns, 28.7500 us/op
+I/DOTNET  : WorkloadWarmup   7: 1 op, 28750.00 ns, 28.7500 us/op
+I/DOTNET  : WorkloadWarmup   8: 1 op, 39479.00 ns, 39.4790 us/op
+I/DOTNET  : WorkloadWarmup   9: 1 op, 30521.00 ns, 30.5210 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 1 op, 32136.00 ns, 32.1360 us/op
+I/DOTNET  : WorkloadActual   2: 1 op, 28386.00 ns, 28.3860 us/op
+I/DOTNET  : WorkloadActual   3: 1 op, 35313.00 ns, 35.3130 us/op
+I/DOTNET  : WorkloadActual   4: 1 op, 29792.00 ns, 29.7920 us/op
+I/DOTNET  : WorkloadActual   5: 1 op, 29687.00 ns, 29.6870 us/op
+I/DOTNET  : WorkloadActual   6: 1 op, 29635.00 ns, 29.6350 us/op
+I/DOTNET  : WorkloadActual   7: 1 op, 33490.00 ns, 33.4900 us/op
+I/DOTNET  : WorkloadActual   8: 1 op, 30312.00 ns, 30.3120 us/op
+I/DOTNET  : WorkloadActual   9: 1 op, 27291.00 ns, 27.2910 us/op
+I/DOTNET  : WorkloadActual  10: 1 op, 30208.00 ns, 30.2080 us/op
+I/DOTNET  : WorkloadActual  11: 1 op, 28177.00 ns, 28.1770 us/op
+I/DOTNET  : WorkloadActual  12: 1 op, 30365.00 ns, 30.3650 us/op
+I/DOTNET  : WorkloadActual  13: 1 op, 28021.00 ns, 28.0210 us/op
+I/DOTNET  : WorkloadActual  14: 1 op, 29063.00 ns, 29.0630 us/op
+I/DOTNET  : WorkloadActual  15: 1 op, 29896.00 ns, 29.8960 us/op
+I/DOTNET  : WorkloadActual  16: 1 op, 29844.00 ns, 29.8440 us/op
+I/DOTNET  : WorkloadActual  17: 1 op, 28437.00 ns, 28.4370 us/op
+I/DOTNET  : WorkloadActual  18: 1 op, 28906.00 ns, 28.9060 us/op
+I/DOTNET  : WorkloadActual  19: 1 op, 29062.00 ns, 29.0620 us/op
+I/DOTNET  : WorkloadActual  20: 1 op, 29427.00 ns, 29.4270 us/op
+I/DOTNET  : WorkloadActual  21: 1 op, 26718.00 ns, 26.7180 us/op
+I/DOTNET  : WorkloadActual  22: 1 op, 29427.00 ns, 29.4270 us/op
+I/DOTNET  : WorkloadActual  23: 1 op, 29739.00 ns, 29.7390 us/op
+I/DOTNET  : WorkloadActual  24: 1 op, 28334.00 ns, 28.3340 us/op
+I/DOTNET  : WorkloadActual  25: 1 op, 29583.00 ns, 29.5830 us/op
+I/DOTNET  : WorkloadActual  26: 1 op, 28750.00 ns, 28.7500 us/op
+I/DOTNET  : WorkloadActual  27: 1 op, 31823.00 ns, 31.8230 us/op
+I/DOTNET  : WorkloadActual  28: 1 op, 29427.00 ns, 29.4270 us/op
+I/DOTNET  : WorkloadActual  29: 1 op, 27605.00 ns, 27.6050 us/op
+I/DOTNET  : WorkloadActual  30: 1 op, 29010.00 ns, 29.0100 us/op
+I/DOTNET  : WorkloadActual  31: 1 op, 31406.00 ns, 31.4060 us/op
+I/DOTNET  : WorkloadActual  32: 1 op, 29896.00 ns, 29.8960 us/op
+I/DOTNET  : WorkloadActual  33: 1 op, 29791.00 ns, 29.7910 us/op
+I/DOTNET  : WorkloadActual  34: 1 op, 30937.00 ns, 30.9370 us/op
+I/DOTNET  : WorkloadActual  35: 1 op, 30625.00 ns, 30.6250 us/op
+I/DOTNET  : WorkloadActual  36: 1 op, 29062.00 ns, 29.0620 us/op
+I/DOTNET  : WorkloadActual  37: 1 op, 26510.00 ns, 26.5100 us/op
+I/DOTNET  : WorkloadActual  38: 1 op, 28125.00 ns, 28.1250 us/op
+I/DOTNET  : WorkloadActual  39: 1 op, 26667.00 ns, 26.6670 us/op
+I/DOTNET  : WorkloadActual  40: 1 op, 27240.00 ns, 27.2400 us/op
+I/DOTNET  : WorkloadActual  41: 1 op, 28646.00 ns, 28.6460 us/op
+I/DOTNET  : WorkloadActual  42: 1 op, 29218.00 ns, 29.2180 us/op
+I/DOTNET  : WorkloadActual  43: 1 op, 29584.00 ns, 29.5840 us/op
+I/DOTNET  : WorkloadActual  44: 1 op, 29167.00 ns, 29.1670 us/op
+I/DOTNET  : WorkloadActual  45: 1 op, 29010.00 ns, 29.0100 us/op
+I/DOTNET  : WorkloadActual  46: 1 op, 28645.00 ns, 28.6450 us/op
+I/DOTNET  : WorkloadActual  47: 1 op, 29428.00 ns, 29.4280 us/op
+I/DOTNET  : WorkloadActual  48: 1 op, 31250.00 ns, 31.2500 us/op
+I/DOTNET  : WorkloadActual  49: 1 op, 30573.00 ns, 30.5730 us/op
+I/DOTNET  : WorkloadActual  50: 1 op, 30000.00 ns, 30.0000 us/op
+I/DOTNET  : WorkloadActual  51: 1 op, 30208.00 ns, 30.2080 us/op
+I/DOTNET  : WorkloadActual  52: 1 op, 43803.00 ns, 43.8030 us/op
+I/DOTNET  : WorkloadActual  53: 1 op, 29167.00 ns, 29.1670 us/op
+I/DOTNET  : WorkloadActual  54: 1 op, 28333.00 ns, 28.3330 us/op
+I/DOTNET  : WorkloadActual  55: 1 op, 32240.00 ns, 32.2400 us/op
+I/DOTNET  : WorkloadActual  56: 1 op, 30938.00 ns, 30.9380 us/op
+I/DOTNET  : WorkloadActual  57: 1 op, 30573.00 ns, 30.5730 us/op
+I/DOTNET  : WorkloadActual  58: 1 op, 30052.00 ns, 30.0520 us/op
+I/DOTNET  : WorkloadActual  59: 1 op, 30416.00 ns, 30.4160 us/op
+I/DOTNET  : WorkloadActual  60: 1 op, 31667.00 ns, 31.6670 us/op
+I/DOTNET  : WorkloadActual  61: 1 op, 29843.00 ns, 29.8430 us/op
+I/DOTNET  : WorkloadActual  62: 1 op, 29062.00 ns, 29.0620 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 1 op, 31120.50 ns, 31.1205 us/op
+I/DOTNET  : WorkloadResult   2: 1 op, 27370.50 ns, 27.3705 us/op
+I/DOTNET  : WorkloadResult   3: 1 op, 28776.50 ns, 28.7765 us/op
+I/DOTNET  : WorkloadResult   4: 1 op, 28671.50 ns, 28.6715 us/op
+I/DOTNET  : WorkloadResult   5: 1 op, 28619.50 ns, 28.6195 us/op
+I/DOTNET  : WorkloadResult   6: 1 op, 29296.50 ns, 29.2965 us/op
+I/DOTNET  : WorkloadResult   7: 1 op, 26275.50 ns, 26.2755 us/op
+I/DOTNET  : WorkloadResult   8: 1 op, 29192.50 ns, 29.1925 us/op
+I/DOTNET  : WorkloadResult   9: 1 op, 27161.50 ns, 27.1615 us/op
+I/DOTNET  : WorkloadResult  10: 1 op, 29349.50 ns, 29.3495 us/op
+I/DOTNET  : WorkloadResult  11: 1 op, 27005.50 ns, 27.0055 us/op
+I/DOTNET  : WorkloadResult  12: 1 op, 28047.50 ns, 28.0475 us/op
+I/DOTNET  : WorkloadResult  13: 1 op, 28880.50 ns, 28.8805 us/op
+I/DOTNET  : WorkloadResult  14: 1 op, 28828.50 ns, 28.8285 us/op
+I/DOTNET  : WorkloadResult  15: 1 op, 27421.50 ns, 27.4215 us/op
+I/DOTNET  : WorkloadResult  16: 1 op, 27890.50 ns, 27.8905 us/op
+I/DOTNET  : WorkloadResult  17: 1 op, 28046.50 ns, 28.0465 us/op
+I/DOTNET  : WorkloadResult  18: 1 op, 28411.50 ns, 28.4115 us/op
+I/DOTNET  : WorkloadResult  19: 1 op, 25702.50 ns, 25.7025 us/op
+I/DOTNET  : WorkloadResult  20: 1 op, 28411.50 ns, 28.4115 us/op
+I/DOTNET  : WorkloadResult  21: 1 op, 28723.50 ns, 28.7235 us/op
+I/DOTNET  : WorkloadResult  22: 1 op, 27318.50 ns, 27.3185 us/op
+I/DOTNET  : WorkloadResult  23: 1 op, 28567.50 ns, 28.5675 us/op
+I/DOTNET  : WorkloadResult  24: 1 op, 27734.50 ns, 27.7345 us/op
+I/DOTNET  : WorkloadResult  25: 1 op, 30807.50 ns, 30.8075 us/op
+I/DOTNET  : WorkloadResult  26: 1 op, 28411.50 ns, 28.4115 us/op
+I/DOTNET  : WorkloadResult  27: 1 op, 26589.50 ns, 26.5895 us/op
+I/DOTNET  : WorkloadResult  28: 1 op, 27994.50 ns, 27.9945 us/op
+I/DOTNET  : WorkloadResult  29: 1 op, 30390.50 ns, 30.3905 us/op
+I/DOTNET  : WorkloadResult  30: 1 op, 28880.50 ns, 28.8805 us/op
+I/DOTNET  : WorkloadResult  31: 1 op, 28775.50 ns, 28.7755 us/op
+I/DOTNET  : WorkloadResult  32: 1 op, 29921.50 ns, 29.9215 us/op
+I/DOTNET  : WorkloadResult  33: 1 op, 29609.50 ns, 29.6095 us/op
+I/DOTNET  : WorkloadResult  34: 1 op, 28046.50 ns, 28.0465 us/op
+I/DOTNET  : WorkloadResult  35: 1 op, 25494.50 ns, 25.4945 us/op
+I/DOTNET  : WorkloadResult  36: 1 op, 27109.50 ns, 27.1095 us/op
+I/DOTNET  : WorkloadResult  37: 1 op, 25651.50 ns, 25.6515 us/op
+I/DOTNET  : WorkloadResult  38: 1 op, 26224.50 ns, 26.2245 us/op
+I/DOTNET  : WorkloadResult  39: 1 op, 27630.50 ns, 27.6305 us/op
+I/DOTNET  : WorkloadResult  40: 1 op, 28202.50 ns, 28.2025 us/op
+I/DOTNET  : WorkloadResult  41: 1 op, 28568.50 ns, 28.5685 us/op
+I/DOTNET  : WorkloadResult  42: 1 op, 28151.50 ns, 28.1515 us/op
+I/DOTNET  : WorkloadResult  43: 1 op, 27994.50 ns, 27.9945 us/op
+I/DOTNET  : WorkloadResult  44: 1 op, 27629.50 ns, 27.6295 us/op
+I/DOTNET  : WorkloadResult  45: 1 op, 28412.50 ns, 28.4125 us/op
+I/DOTNET  : WorkloadResult  46: 1 op, 30234.50 ns, 30.2345 us/op
+I/DOTNET  : WorkloadResult  47: 1 op, 29557.50 ns, 29.5575 us/op
+I/DOTNET  : WorkloadResult  48: 1 op, 28984.50 ns, 28.9845 us/op
+I/DOTNET  : WorkloadResult  49: 1 op, 29192.50 ns, 29.1925 us/op
+I/DOTNET  : WorkloadResult  50: 1 op, 28151.50 ns, 28.1515 us/op
+I/DOTNET  : WorkloadResult  51: 1 op, 27317.50 ns, 27.3175 us/op
+I/DOTNET  : WorkloadResult  52: 1 op, 31224.50 ns, 31.2245 us/op
+I/DOTNET  : WorkloadResult  53: 1 op, 29922.50 ns, 29.9225 us/op
+I/DOTNET  : WorkloadResult  54: 1 op, 29557.50 ns, 29.5575 us/op
+I/DOTNET  : WorkloadResult  55: 1 op, 29036.50 ns, 29.0365 us/op
+I/DOTNET  : WorkloadResult  56: 1 op, 29400.50 ns, 29.4005 us/op
+I/DOTNET  : WorkloadResult  57: 1 op, 30651.50 ns, 30.6515 us/op
+I/DOTNET  : WorkloadResult  58: 1 op, 28827.50 ns, 28.8275 us/op
+I/DOTNET  : WorkloadResult  59: 1 op, 28046.50 ns, 28.0465 us/op
+I/DOTNET  : // GC:  0 0 0 5424 1
+I/DOTNET  : // Threading:  0 0 1
+I/DOTNET  : 
+I/DOTNET  : Mean = 28.431 us, StdErr = 0.168 us (0.59%), N = 59, StdDev = 1.290 us
+I/DOTNET  : Min = 25.494 us, Q1 = 27.683 us, Median = 28.413 us, Q3 = 29.192 us, Max = 31.225 us
+I/DOTNET  : IQR = 1.510 us, LowerFence = 25.418 us, UpperFence = 31.457 us
+I/DOTNET  : ConfidenceInterval = [27.849 us; 29.013 us] (CI 99.9%), Margin = 0.582 us (2.05% of Mean)
+I/DOTNET  : Skewness = -0.11, Kurtosis = 2.91, MValue = 2.36
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 4 (40.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:46 (0h 0m from now) **
+I/DOTNET  : // ***** BenchmarkRunner: Finish  *****
+I/DOTNET  : 
+I/DOTNET  : // * Export *
+I/DOTNET  : 
+I/DOTNET  : // * Detailed results *
+I/DOTNET  : SetBinding.Compiled_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 28.431 us, StdErr = 0.168 us (0.59%), N = 59, StdDev = 1.290 us
+I/DOTNET  : Min = 25.494 us, Q1 = 27.683 us, Median = 28.413 us, Q3 = 29.192 us, Max = 31.225 us
+I/DOTNET  : IQR = 1.510 us, LowerFence = 25.418 us, UpperFence = 31.457 us
+I/DOTNET  : ConfidenceInterval = [27.849 us; 29.013 us] (CI 99.9%), Margin = 0.582 us (2.05% of Mean)
+I/DOTNET  : Skewness = -0.11, Kurtosis = 2.91, MValue = 2.36
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [25.450 us ; 26.320 us) | @@@@@
+I/DOTNET  : [26.320 us ; 26.935 us) | @
+I/DOTNET  : [26.935 us ; 27.976 us) | @@@@@@@@@@@
+I/DOTNET  : [27.976 us ; 28.847 us) | @@@@@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [28.847 us ; 29.851 us) | @@@@@@@@@@@@
+I/DOTNET  : [29.851 us ; 30.722 us) | @@@@@
+I/DOTNET  : [30.722 us ; 31.660 us) | @@@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : SetBinding.Classic_SetBinding: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 67.968 us, StdErr = 0.383 us (0.56%), N = 38, StdDev = 2.360 us
+I/DOTNET  : Min = 62.657 us, Q1 = 66.719 us, Median = 68.308 us, Q3 = 69.285 us, Max = 72.501 us
+I/DOTNET  : IQR = 2.566 us, LowerFence = 62.871 us, UpperFence = 73.133 us
+I/DOTNET  : ConfidenceInterval = [66.600 us; 69.336 us] (CI 99.9%), Margin = 1.368 us (2.01% of Mean)
+I/DOTNET  : Skewness = -0.41, Kurtosis = 2.68, MValue = 2.25
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [62.595 us ; 65.642 us) | @@@@@@
+I/DOTNET  : [65.642 us ; 67.595 us) | @@@@@@@
+I/DOTNET  : [67.595 us ; 69.438 us) | @@@@@@@@@@@@@@@@@
+I/DOTNET  : [69.438 us ; 71.442 us) | @@@@@@
+I/DOTNET  : [71.442 us ; 73.422 us) | @@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : // * Summary *
+I/DOTNET  : 
+I/DOTNET  : BenchmarkDotNet v0.14.0, Unknown 
+I/DOTNET  : Unknown processor
+I/DOTNET  :   [Host] : .NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : 
+I/DOTNET  : Toolchain=InProcessEmitToolchain  InvocationCount=1  UnrollFactor=1  
+I/DOTNET  : 
+I/DOTNET  : | Method              | Mean     | Error    | StdDev   | Ratio | RatioSD | Allocated | Alloc Ratio |
+I/DOTNET  : |-------------------- |---------:|---------:|---------:|------:|--------:|----------:|------------:|
+I/DOTNET  : | Compiled_SetBinding | 28.43 us | 0.582 us | 1.290 us |  0.42 |    0.02 |         - |          NA |
+I/DOTNET  : | Classic_SetBinding  | 67.97 us | 1.368 us | 2.360 us |  1.00 |    0.05 |         - |          NA |
+I/DOTNET  : 
+I/DOTNET  : // * Legends *
+I/DOTNET  :   Mean        : Arithmetic mean of all measurements
+I/DOTNET  :   Error       : Half of 99.9% confidence interval
+I/DOTNET  :   StdDev      : Standard deviation of all measurements
+I/DOTNET  :   Ratio       : Mean of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   RatioSD     : Standard deviation of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   Allocated   : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+I/DOTNET  :   Alloc Ratio : Allocated memory ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   1 us        : 1 Microsecond (0.000001 sec)
+I/DOTNET  : 
+I/DOTNET  : // * Diagnostic Output - MemoryDiagnoser *
+I/DOTNET  : 
+I/DOTNET  : 
+I/DOTNET  : // ***** BenchmarkRunner: End *****
+I/DOTNET  : Run time: 00:00:04 (4.6 sec), executed benchmarks: 2
+I/DOTNET  : 
+I/DOTNET  : // Found 2 benchmarks:
+I/DOTNET  : //   UpdateValueOneLevel.Classic_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : //   UpdateValueOneLevel.Compiled_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: UpdateValueOneLevel.Classic_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 160573.00 ns, 160.5730 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 854687.00 ns, 854.6870 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadWarmup   2: 1 op, 1198.00 ns, 1.1980 us/op
+I/DOTNET  : OverheadWarmup   3: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : OverheadWarmup   4: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : OverheadWarmup   5: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual   2: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual   3: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadActual   4: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual   5: 1 op, 1094.00 ns, 1.0940 us/op
+I/DOTNET  : OverheadActual   6: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual   7: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual   8: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual   9: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual  10: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  11: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  12: 1 op, 1198.00 ns, 1.1980 us/op
+I/DOTNET  : OverheadActual  13: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual  14: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  15: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  16: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  17: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  18: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  19: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  20: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 1 op, 44947.00 ns, 44.9470 us/op
+I/DOTNET  : WorkloadWarmup   2: 1 op, 45052.00 ns, 45.0520 us/op
+I/DOTNET  : WorkloadWarmup   3: 1 op, 45730.00 ns, 45.7300 us/op
+I/DOTNET  : WorkloadWarmup   4: 1 op, 46719.00 ns, 46.7190 us/op
+I/DOTNET  : WorkloadWarmup   5: 1 op, 44531.00 ns, 44.5310 us/op
+I/DOTNET  : WorkloadWarmup   6: 1 op, 43229.00 ns, 43.2290 us/op
+I/DOTNET  : WorkloadWarmup   7: 1 op, 44948.00 ns, 44.9480 us/op
+I/DOTNET  : WorkloadWarmup   8: 1 op, 44687.00 ns, 44.6870 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 1 op, 43437.00 ns, 43.4370 us/op
+I/DOTNET  : WorkloadActual   2: 1 op, 45677.00 ns, 45.6770 us/op
+I/DOTNET  : WorkloadActual   3: 1 op, 46094.00 ns, 46.0940 us/op
+I/DOTNET  : WorkloadActual   4: 1 op, 44791.00 ns, 44.7910 us/op
+I/DOTNET  : WorkloadActual   5: 1 op, 43021.00 ns, 43.0210 us/op
+I/DOTNET  : WorkloadActual   6: 1 op, 45260.00 ns, 45.2600 us/op
+I/DOTNET  : WorkloadActual   7: 1 op, 40833.00 ns, 40.8330 us/op
+I/DOTNET  : WorkloadActual   8: 1 op, 43906.00 ns, 43.9060 us/op
+I/DOTNET  : WorkloadActual   9: 1 op, 43802.00 ns, 43.8020 us/op
+I/DOTNET  : WorkloadActual  10: 1 op, 45729.00 ns, 45.7290 us/op
+I/DOTNET  : WorkloadActual  11: 1 op, 42761.00 ns, 42.7610 us/op
+I/DOTNET  : WorkloadActual  12: 1 op, 44062.00 ns, 44.0620 us/op
+I/DOTNET  : WorkloadActual  13: 1 op, 44375.00 ns, 44.3750 us/op
+I/DOTNET  : WorkloadActual  14: 1 op, 44063.00 ns, 44.0630 us/op
+I/DOTNET  : WorkloadActual  15: 1 op, 45677.00 ns, 45.6770 us/op
+I/DOTNET  : WorkloadActual  16: 1 op, 41302.00 ns, 41.3020 us/op
+I/DOTNET  : WorkloadActual  17: 1 op, 41094.00 ns, 41.0940 us/op
+I/DOTNET  : WorkloadActual  18: 1 op, 44167.00 ns, 44.1670 us/op
+I/DOTNET  : WorkloadActual  19: 1 op, 42136.00 ns, 42.1360 us/op
+I/DOTNET  : WorkloadActual  20: 1 op, 43281.00 ns, 43.2810 us/op
+I/DOTNET  : WorkloadActual  21: 1 op, 50000.00 ns, 50.0000 us/op
+I/DOTNET  : WorkloadActual  22: 1 op, 42239.00 ns, 42.2390 us/op
+I/DOTNET  : WorkloadActual  23: 1 op, 42657.00 ns, 42.6570 us/op
+I/DOTNET  : WorkloadActual  24: 1 op, 45573.00 ns, 45.5730 us/op
+I/DOTNET  : WorkloadActual  25: 1 op, 43073.00 ns, 43.0730 us/op
+I/DOTNET  : WorkloadActual  26: 1 op, 43073.00 ns, 43.0730 us/op
+I/DOTNET  : WorkloadActual  27: 1 op, 43437.00 ns, 43.4370 us/op
+I/DOTNET  : WorkloadActual  28: 1 op, 44323.00 ns, 44.3230 us/op
+I/DOTNET  : WorkloadActual  29: 1 op, 44792.00 ns, 44.7920 us/op
+I/DOTNET  : WorkloadActual  30: 1 op, 43646.00 ns, 43.6460 us/op
+I/DOTNET  : WorkloadActual  31: 1 op, 44948.00 ns, 44.9480 us/op
+I/DOTNET  : WorkloadActual  32: 1 op, 44010.00 ns, 44.0100 us/op
+I/DOTNET  : WorkloadActual  33: 1 op, 47240.00 ns, 47.2400 us/op
+I/DOTNET  : WorkloadActual  34: 1 op, 43490.00 ns, 43.4900 us/op
+I/DOTNET  : WorkloadActual  35: 1 op, 43750.00 ns, 43.7500 us/op
+I/DOTNET  : WorkloadActual  36: 1 op, 42448.00 ns, 42.4480 us/op
+I/DOTNET  : WorkloadActual  37: 1 op, 43385.00 ns, 43.3850 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 1 op, 42448.00 ns, 42.4480 us/op
+I/DOTNET  : WorkloadResult   2: 1 op, 44688.00 ns, 44.6880 us/op
+I/DOTNET  : WorkloadResult   3: 1 op, 45105.00 ns, 45.1050 us/op
+I/DOTNET  : WorkloadResult   4: 1 op, 43802.00 ns, 43.8020 us/op
+I/DOTNET  : WorkloadResult   5: 1 op, 42032.00 ns, 42.0320 us/op
+I/DOTNET  : WorkloadResult   6: 1 op, 44271.00 ns, 44.2710 us/op
+I/DOTNET  : WorkloadResult   7: 1 op, 39844.00 ns, 39.8440 us/op
+I/DOTNET  : WorkloadResult   8: 1 op, 42917.00 ns, 42.9170 us/op
+I/DOTNET  : WorkloadResult   9: 1 op, 42813.00 ns, 42.8130 us/op
+I/DOTNET  : WorkloadResult  10: 1 op, 44740.00 ns, 44.7400 us/op
+I/DOTNET  : WorkloadResult  11: 1 op, 41772.00 ns, 41.7720 us/op
+I/DOTNET  : WorkloadResult  12: 1 op, 43073.00 ns, 43.0730 us/op
+I/DOTNET  : WorkloadResult  13: 1 op, 43386.00 ns, 43.3860 us/op
+I/DOTNET  : WorkloadResult  14: 1 op, 43074.00 ns, 43.0740 us/op
+I/DOTNET  : WorkloadResult  15: 1 op, 44688.00 ns, 44.6880 us/op
+I/DOTNET  : WorkloadResult  16: 1 op, 40313.00 ns, 40.3130 us/op
+I/DOTNET  : WorkloadResult  17: 1 op, 40105.00 ns, 40.1050 us/op
+I/DOTNET  : WorkloadResult  18: 1 op, 43178.00 ns, 43.1780 us/op
+I/DOTNET  : WorkloadResult  19: 1 op, 41147.00 ns, 41.1470 us/op
+I/DOTNET  : WorkloadResult  20: 1 op, 42292.00 ns, 42.2920 us/op
+I/DOTNET  : WorkloadResult  21: 1 op, 41250.00 ns, 41.2500 us/op
+I/DOTNET  : WorkloadResult  22: 1 op, 41668.00 ns, 41.6680 us/op
+I/DOTNET  : WorkloadResult  23: 1 op, 44584.00 ns, 44.5840 us/op
+I/DOTNET  : WorkloadResult  24: 1 op, 42084.00 ns, 42.0840 us/op
+I/DOTNET  : WorkloadResult  25: 1 op, 42084.00 ns, 42.0840 us/op
+I/DOTNET  : WorkloadResult  26: 1 op, 42448.00 ns, 42.4480 us/op
+I/DOTNET  : WorkloadResult  27: 1 op, 43334.00 ns, 43.3340 us/op
+I/DOTNET  : WorkloadResult  28: 1 op, 43803.00 ns, 43.8030 us/op
+I/DOTNET  : WorkloadResult  29: 1 op, 42657.00 ns, 42.6570 us/op
+I/DOTNET  : WorkloadResult  30: 1 op, 43959.00 ns, 43.9590 us/op
+I/DOTNET  : WorkloadResult  31: 1 op, 43021.00 ns, 43.0210 us/op
+I/DOTNET  : WorkloadResult  32: 1 op, 46251.00 ns, 46.2510 us/op
+I/DOTNET  : WorkloadResult  33: 1 op, 42501.00 ns, 42.5010 us/op
+I/DOTNET  : WorkloadResult  34: 1 op, 42761.00 ns, 42.7610 us/op
+I/DOTNET  : WorkloadResult  35: 1 op, 41459.00 ns, 41.4590 us/op
+I/DOTNET  : WorkloadResult  36: 1 op, 42396.00 ns, 42.3960 us/op
+I/DOTNET  : // GC:  0 0 0 4288 1
+I/DOTNET  : // Threading:  0 0 1
+I/DOTNET  : 
+I/DOTNET  : Mean = 42.832 us, StdErr = 0.238 us (0.56%), N = 36, StdDev = 1.430 us
+I/DOTNET  : Min = 39.844 us, Q1 = 42.071 us, Median = 42.787 us, Q3 = 43.802 us, Max = 46.251 us
+I/DOTNET  : IQR = 1.731 us, LowerFence = 39.474 us, UpperFence = 46.399 us
+I/DOTNET  : ConfidenceInterval = [41.976 us; 43.688 us] (CI 99.9%), Margin = 0.856 us (2.00% of Mean)
+I/DOTNET  : Skewness = 0.04, Kurtosis = 2.75, MValue = 2
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 3 (30.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:46 (0h 0m from now) **
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: UpdateValueOneLevel.Compiled_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 238750.00 ns, 238.7500 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 220625.00 ns, 220.6250 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 1 op, 782.00 ns, 782.0000 ns/op
+I/DOTNET  : OverheadWarmup   2: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadWarmup   3: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadWarmup   4: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadWarmup   5: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadWarmup   6: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual   2: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual   3: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual   4: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual   5: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual   6: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual   7: 1 op, 834.00 ns, 834.0000 ns/op
+I/DOTNET  : OverheadActual   8: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual   9: 1 op, 782.00 ns, 782.0000 ns/op
+I/DOTNET  : OverheadActual  10: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual  11: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  12: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual  13: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  14: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual  15: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual  16: 1 op, 1094.00 ns, 1.0940 us/op
+I/DOTNET  : OverheadActual  17: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual  18: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  19: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadActual  20: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 1 op, 36459.00 ns, 36.4590 us/op
+I/DOTNET  : WorkloadWarmup   2: 1 op, 33854.00 ns, 33.8540 us/op
+I/DOTNET  : WorkloadWarmup   3: 1 op, 32917.00 ns, 32.9170 us/op
+I/DOTNET  : WorkloadWarmup   4: 1 op, 32760.00 ns, 32.7600 us/op
+I/DOTNET  : WorkloadWarmup   5: 1 op, 33489.00 ns, 33.4890 us/op
+I/DOTNET  : WorkloadWarmup   6: 1 op, 33229.00 ns, 33.2290 us/op
+I/DOTNET  : WorkloadWarmup   7: 1 op, 30313.00 ns, 30.3130 us/op
+I/DOTNET  : WorkloadWarmup   8: 1 op, 30989.00 ns, 30.9890 us/op
+I/DOTNET  : WorkloadWarmup   9: 1 op, 30312.00 ns, 30.3120 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 1 op, 31979.00 ns, 31.9790 us/op
+I/DOTNET  : WorkloadActual   2: 1 op, 30573.00 ns, 30.5730 us/op
+I/DOTNET  : WorkloadActual   3: 1 op, 30886.00 ns, 30.8860 us/op
+I/DOTNET  : WorkloadActual   4: 1 op, 31875.00 ns, 31.8750 us/op
+I/DOTNET  : WorkloadActual   5: 1 op, 31354.00 ns, 31.3540 us/op
+I/DOTNET  : WorkloadActual   6: 1 op, 30208.00 ns, 30.2080 us/op
+I/DOTNET  : WorkloadActual   7: 1 op, 30521.00 ns, 30.5210 us/op
+I/DOTNET  : WorkloadActual   8: 1 op, 29791.00 ns, 29.7910 us/op
+I/DOTNET  : WorkloadActual   9: 1 op, 31615.00 ns, 31.6150 us/op
+I/DOTNET  : WorkloadActual  10: 1 op, 31823.00 ns, 31.8230 us/op
+I/DOTNET  : WorkloadActual  11: 1 op, 30677.00 ns, 30.6770 us/op
+I/DOTNET  : WorkloadActual  12: 1 op, 30990.00 ns, 30.9900 us/op
+I/DOTNET  : WorkloadActual  13: 1 op, 33073.00 ns, 33.0730 us/op
+I/DOTNET  : WorkloadActual  14: 1 op, 31302.00 ns, 31.3020 us/op
+I/DOTNET  : WorkloadActual  15: 1 op, 32656.00 ns, 32.6560 us/op
+I/DOTNET  : WorkloadActual  16: 1 op, 31666.00 ns, 31.6660 us/op
+I/DOTNET  : WorkloadActual  17: 1 op, 31094.00 ns, 31.0940 us/op
+I/DOTNET  : WorkloadActual  18: 1 op, 30625.00 ns, 30.6250 us/op
+I/DOTNET  : WorkloadActual  19: 1 op, 30573.00 ns, 30.5730 us/op
+I/DOTNET  : WorkloadActual  20: 1 op, 34583.00 ns, 34.5830 us/op
+I/DOTNET  : WorkloadActual  21: 1 op, 30520.00 ns, 30.5200 us/op
+I/DOTNET  : WorkloadActual  22: 1 op, 29375.00 ns, 29.3750 us/op
+I/DOTNET  : WorkloadActual  23: 1 op, 28802.00 ns, 28.8020 us/op
+I/DOTNET  : WorkloadActual  24: 1 op, 32031.00 ns, 32.0310 us/op
+I/DOTNET  : WorkloadActual  25: 1 op, 30990.00 ns, 30.9900 us/op
+I/DOTNET  : WorkloadActual  26: 1 op, 35052.00 ns, 35.0520 us/op
+I/DOTNET  : WorkloadActual  27: 1 op, 32657.00 ns, 32.6570 us/op
+I/DOTNET  : WorkloadActual  28: 1 op, 33750.00 ns, 33.7500 us/op
+I/DOTNET  : WorkloadActual  29: 1 op, 29635.00 ns, 29.6350 us/op
+I/DOTNET  : WorkloadActual  30: 1 op, 29167.00 ns, 29.1670 us/op
+I/DOTNET  : WorkloadActual  31: 1 op, 32604.00 ns, 32.6040 us/op
+I/DOTNET  : WorkloadActual  32: 1 op, 29948.00 ns, 29.9480 us/op
+I/DOTNET  : WorkloadActual  33: 1 op, 28906.00 ns, 28.9060 us/op
+I/DOTNET  : WorkloadActual  34: 1 op, 30989.00 ns, 30.9890 us/op
+I/DOTNET  : WorkloadActual  35: 1 op, 32812.00 ns, 32.8120 us/op
+I/DOTNET  : WorkloadActual  36: 1 op, 32917.00 ns, 32.9170 us/op
+I/DOTNET  : WorkloadActual  37: 1 op, 32240.00 ns, 32.2400 us/op
+I/DOTNET  : WorkloadActual  38: 1 op, 31302.00 ns, 31.3020 us/op
+I/DOTNET  : WorkloadActual  39: 1 op, 33281.00 ns, 33.2810 us/op
+I/DOTNET  : WorkloadActual  40: 1 op, 32761.00 ns, 32.7610 us/op
+I/DOTNET  : WorkloadActual  41: 1 op, 32240.00 ns, 32.2400 us/op
+I/DOTNET  : WorkloadActual  42: 1 op, 34062.00 ns, 34.0620 us/op
+I/DOTNET  : WorkloadActual  43: 1 op, 31615.00 ns, 31.6150 us/op
+I/DOTNET  : WorkloadActual  44: 1 op, 32969.00 ns, 32.9690 us/op
+I/DOTNET  : WorkloadActual  45: 1 op, 29739.00 ns, 29.7390 us/op
+I/DOTNET  : WorkloadActual  46: 1 op, 31719.00 ns, 31.7190 us/op
+I/DOTNET  : WorkloadActual  47: 1 op, 31041.00 ns, 31.0410 us/op
+I/DOTNET  : WorkloadActual  48: 1 op, 32708.00 ns, 32.7080 us/op
+I/DOTNET  : WorkloadActual  49: 1 op, 30573.00 ns, 30.5730 us/op
+I/DOTNET  : WorkloadActual  50: 1 op, 31718.00 ns, 31.7180 us/op
+I/DOTNET  : WorkloadActual  51: 1 op, 32448.00 ns, 32.4480 us/op
+I/DOTNET  : WorkloadActual  52: 1 op, 31407.00 ns, 31.4070 us/op
+I/DOTNET  : WorkloadActual  53: 1 op, 30573.00 ns, 30.5730 us/op
+I/DOTNET  : WorkloadActual  54: 1 op, 32552.00 ns, 32.5520 us/op
+I/DOTNET  : WorkloadActual  55: 1 op, 29323.00 ns, 29.3230 us/op
+I/DOTNET  : WorkloadActual  56: 1 op, 31823.00 ns, 31.8230 us/op
+I/DOTNET  : WorkloadActual  57: 1 op, 34010.00 ns, 34.0100 us/op
+I/DOTNET  : WorkloadActual  58: 1 op, 32187.00 ns, 32.1870 us/op
+I/DOTNET  : WorkloadActual  59: 1 op, 31718.00 ns, 31.7180 us/op
+I/DOTNET  : WorkloadActual  60: 1 op, 34011.00 ns, 34.0110 us/op
+I/DOTNET  : WorkloadActual  61: 1 op, 32187.00 ns, 32.1870 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 1 op, 31015.50 ns, 31.0155 us/op
+I/DOTNET  : WorkloadResult   2: 1 op, 29609.50 ns, 29.6095 us/op
+I/DOTNET  : WorkloadResult   3: 1 op, 29922.50 ns, 29.9225 us/op
+I/DOTNET  : WorkloadResult   4: 1 op, 30911.50 ns, 30.9115 us/op
+I/DOTNET  : WorkloadResult   5: 1 op, 30390.50 ns, 30.3905 us/op
+I/DOTNET  : WorkloadResult   6: 1 op, 29244.50 ns, 29.2445 us/op
+I/DOTNET  : WorkloadResult   7: 1 op, 29557.50 ns, 29.5575 us/op
+I/DOTNET  : WorkloadResult   8: 1 op, 28827.50 ns, 28.8275 us/op
+I/DOTNET  : WorkloadResult   9: 1 op, 30651.50 ns, 30.6515 us/op
+I/DOTNET  : WorkloadResult  10: 1 op, 30859.50 ns, 30.8595 us/op
+I/DOTNET  : WorkloadResult  11: 1 op, 29713.50 ns, 29.7135 us/op
+I/DOTNET  : WorkloadResult  12: 1 op, 30026.50 ns, 30.0265 us/op
+I/DOTNET  : WorkloadResult  13: 1 op, 32109.50 ns, 32.1095 us/op
+I/DOTNET  : WorkloadResult  14: 1 op, 30338.50 ns, 30.3385 us/op
+I/DOTNET  : WorkloadResult  15: 1 op, 31692.50 ns, 31.6925 us/op
+I/DOTNET  : WorkloadResult  16: 1 op, 30702.50 ns, 30.7025 us/op
+I/DOTNET  : WorkloadResult  17: 1 op, 30130.50 ns, 30.1305 us/op
+I/DOTNET  : WorkloadResult  18: 1 op, 29661.50 ns, 29.6615 us/op
+I/DOTNET  : WorkloadResult  19: 1 op, 29609.50 ns, 29.6095 us/op
+I/DOTNET  : WorkloadResult  20: 1 op, 33619.50 ns, 33.6195 us/op
+I/DOTNET  : WorkloadResult  21: 1 op, 29556.50 ns, 29.5565 us/op
+I/DOTNET  : WorkloadResult  22: 1 op, 28411.50 ns, 28.4115 us/op
+I/DOTNET  : WorkloadResult  23: 1 op, 27838.50 ns, 27.8385 us/op
+I/DOTNET  : WorkloadResult  24: 1 op, 31067.50 ns, 31.0675 us/op
+I/DOTNET  : WorkloadResult  25: 1 op, 30026.50 ns, 30.0265 us/op
+I/DOTNET  : WorkloadResult  26: 1 op, 34088.50 ns, 34.0885 us/op
+I/DOTNET  : WorkloadResult  27: 1 op, 31693.50 ns, 31.6935 us/op
+I/DOTNET  : WorkloadResult  28: 1 op, 32786.50 ns, 32.7865 us/op
+I/DOTNET  : WorkloadResult  29: 1 op, 28671.50 ns, 28.6715 us/op
+I/DOTNET  : WorkloadResult  30: 1 op, 28203.50 ns, 28.2035 us/op
+I/DOTNET  : WorkloadResult  31: 1 op, 31640.50 ns, 31.6405 us/op
+I/DOTNET  : WorkloadResult  32: 1 op, 28984.50 ns, 28.9845 us/op
+I/DOTNET  : WorkloadResult  33: 1 op, 27942.50 ns, 27.9425 us/op
+I/DOTNET  : WorkloadResult  34: 1 op, 30025.50 ns, 30.0255 us/op
+I/DOTNET  : WorkloadResult  35: 1 op, 31848.50 ns, 31.8485 us/op
+I/DOTNET  : WorkloadResult  36: 1 op, 31953.50 ns, 31.9535 us/op
+I/DOTNET  : WorkloadResult  37: 1 op, 31276.50 ns, 31.2765 us/op
+I/DOTNET  : WorkloadResult  38: 1 op, 30338.50 ns, 30.3385 us/op
+I/DOTNET  : WorkloadResult  39: 1 op, 32317.50 ns, 32.3175 us/op
+I/DOTNET  : WorkloadResult  40: 1 op, 31797.50 ns, 31.7975 us/op
+I/DOTNET  : WorkloadResult  41: 1 op, 31276.50 ns, 31.2765 us/op
+I/DOTNET  : WorkloadResult  42: 1 op, 33098.50 ns, 33.0985 us/op
+I/DOTNET  : WorkloadResult  43: 1 op, 30651.50 ns, 30.6515 us/op
+I/DOTNET  : WorkloadResult  44: 1 op, 32005.50 ns, 32.0055 us/op
+I/DOTNET  : WorkloadResult  45: 1 op, 28775.50 ns, 28.7755 us/op
+I/DOTNET  : WorkloadResult  46: 1 op, 30755.50 ns, 30.7555 us/op
+I/DOTNET  : WorkloadResult  47: 1 op, 30077.50 ns, 30.0775 us/op
+I/DOTNET  : WorkloadResult  48: 1 op, 31744.50 ns, 31.7445 us/op
+I/DOTNET  : WorkloadResult  49: 1 op, 29609.50 ns, 29.6095 us/op
+I/DOTNET  : WorkloadResult  50: 1 op, 30754.50 ns, 30.7545 us/op
+I/DOTNET  : WorkloadResult  51: 1 op, 31484.50 ns, 31.4845 us/op
+I/DOTNET  : WorkloadResult  52: 1 op, 30443.50 ns, 30.4435 us/op
+I/DOTNET  : WorkloadResult  53: 1 op, 29609.50 ns, 29.6095 us/op
+I/DOTNET  : WorkloadResult  54: 1 op, 31588.50 ns, 31.5885 us/op
+I/DOTNET  : WorkloadResult  55: 1 op, 28359.50 ns, 28.3595 us/op
+I/DOTNET  : WorkloadResult  56: 1 op, 30859.50 ns, 30.8595 us/op
+I/DOTNET  : WorkloadResult  57: 1 op, 33046.50 ns, 33.0465 us/op
+I/DOTNET  : WorkloadResult  58: 1 op, 31223.50 ns, 31.2235 us/op
+I/DOTNET  : WorkloadResult  59: 1 op, 30754.50 ns, 30.7545 us/op
+I/DOTNET  : WorkloadResult  60: 1 op, 33047.50 ns, 33.0475 us/op
+I/DOTNET  : WorkloadResult  61: 1 op, 31223.50 ns, 31.2235 us/op
+I/DOTNET  : // GC:  0 0 0 4304 1
+I/DOTNET  : // Threading:  0 0 1
+I/DOTNET  : 
+I/DOTNET  : Mean = 30.647 us, StdErr = 0.181 us (0.59%), N = 61, StdDev = 1.414 us
+I/DOTNET  : Min = 27.838 us, Q1 = 29.610 us, Median = 30.702 us, Q3 = 31.640 us, Max = 34.089 us
+I/DOTNET  : IQR = 2.031 us, LowerFence = 26.563 us, UpperFence = 34.687 us
+I/DOTNET  : ConfidenceInterval = [30.020 us; 31.273 us] (CI 99.9%), Margin = 0.626 us (2.04% of Mean)
+I/DOTNET  : Skewness = 0.14, Kurtosis = 2.61, MValue = 2
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 2 (20.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:46 (0h 0m from now) **
+I/DOTNET  : // ***** BenchmarkRunner: Finish  *****
+I/DOTNET  : 
+I/DOTNET  : // * Export *
+I/DOTNET  : 
+I/DOTNET  : // * Detailed results *
+I/DOTNET  : UpdateValueOneLevel.Compiled_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 30.647 us, StdErr = 0.181 us (0.59%), N = 61, StdDev = 1.414 us
+I/DOTNET  : Min = 27.838 us, Q1 = 29.610 us, Median = 30.702 us, Q3 = 31.640 us, Max = 34.089 us
+I/DOTNET  : IQR = 2.031 us, LowerFence = 26.563 us, UpperFence = 34.687 us
+I/DOTNET  : ConfidenceInterval = [30.020 us; 31.273 us] (CI 99.9%), Margin = 0.626 us (2.04% of Mean)
+I/DOTNET  : Skewness = 0.14, Kurtosis = 2.61, MValue = 2
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [27.367 us ; 28.123 us) | @@
+I/DOTNET  : [28.123 us ; 29.216 us) | @@@@@@@
+I/DOTNET  : [29.216 us ; 30.336 us) | @@@@@@@@@@@@@@@
+I/DOTNET  : [30.336 us ; 31.279 us) | @@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [31.279 us ; 32.372 us) | @@@@@@@@@@@@
+I/DOTNET  : [32.372 us ; 33.674 us) | @@@@@
+I/DOTNET  : [33.674 us ; 34.560 us) | @
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : UpdateValueOneLevel.Classic_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 42.832 us, StdErr = 0.238 us (0.56%), N = 36, StdDev = 1.430 us
+I/DOTNET  : Min = 39.844 us, Q1 = 42.071 us, Median = 42.787 us, Q3 = 43.802 us, Max = 46.251 us
+I/DOTNET  : IQR = 1.731 us, LowerFence = 39.474 us, UpperFence = 46.399 us
+I/DOTNET  : ConfidenceInterval = [41.976 us; 43.688 us] (CI 99.9%), Margin = 0.856 us (2.00% of Mean)
+I/DOTNET  : Skewness = 0.04, Kurtosis = 2.75, MValue = 2
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [39.510 us ; 40.647 us) | @@@
+I/DOTNET  : [40.647 us ; 41.984 us) | @@@@@
+I/DOTNET  : [41.984 us ; 43.122 us) | @@@@@@@@@@@@@@@
+I/DOTNET  : [43.122 us ; 44.840 us) | @@@@@@@@@@@
+I/DOTNET  : [44.840 us ; 46.820 us) | @@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : // * Summary *
+I/DOTNET  : 
+I/DOTNET  : BenchmarkDotNet v0.14.0, Unknown 
+I/DOTNET  : Unknown processor
+I/DOTNET  :   [Host] : .NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : 
+I/DOTNET  : Toolchain=InProcessEmitToolchain  InvocationCount=1  UnrollFactor=1  
+I/DOTNET  : 
+I/DOTNET  : | Method                           | Mean     | Error    | StdDev   | Ratio | RatioSD | Allocated | Alloc Ratio |
+I/DOTNET  : |--------------------------------- |---------:|---------:|---------:|------:|--------:|----------:|------------:|
+I/DOTNET  : | Compiled_UpdateWhenSourceChanges | 30.65 us | 0.626 us | 1.414 us |  0.72 |    0.04 |         - |          NA |
+I/DOTNET  : | Classic_UpdateWhenSourceChanges  | 42.83 us | 0.856 us | 1.430 us |  1.00 |    0.05 |         - |          NA |
+I/DOTNET  : 
+I/DOTNET  : // * Legends *
+I/DOTNET  :   Mean        : Arithmetic mean of all measurements
+I/DOTNET  :   Error       : Half of 99.9% confidence interval
+I/DOTNET  :   StdDev      : Standard deviation of all measurements
+I/DOTNET  :   Ratio       : Mean of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   RatioSD     : Standard deviation of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   Allocated   : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+I/DOTNET  :   Alloc Ratio : Allocated memory ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   1 us        : 1 Microsecond (0.000001 sec)
+I/DOTNET  : 
+I/DOTNET  : // * Diagnostic Output - MemoryDiagnoser *
+I/DOTNET  : 
+I/DOTNET  : 
+I/DOTNET  : // ***** BenchmarkRunner: End *****
+I/DOTNET  : Run time: 00:00:04 (4.45 sec), executed benchmarks: 2
+I/DOTNET  : 
+I/DOTNET  : // Found 2 benchmarks:
+I/DOTNET  : //   UpdateValueTwoLevels.Classic_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : //   UpdateValueTwoLevels.Compiled_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: UpdateValueTwoLevels.Classic_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 158541.00 ns, 158.5410 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 155885.00 ns, 155.8850 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 1 op, 1198.00 ns, 1.1980 us/op
+I/DOTNET  : OverheadWarmup   2: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadWarmup   3: 1 op, 1145.00 ns, 1.1450 us/op
+I/DOTNET  : OverheadWarmup   4: 1 op, 1093.00 ns, 1.0930 us/op
+I/DOTNET  : OverheadWarmup   5: 1 op, 1406.00 ns, 1.4060 us/op
+I/DOTNET  : OverheadWarmup   6: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : OverheadActual   2: 1 op, 782.00 ns, 782.0000 ns/op
+I/DOTNET  : OverheadActual   3: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadActual   4: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual   5: 1 op, 1250.00 ns, 1.2500 us/op
+I/DOTNET  : OverheadActual   6: 1 op, 1146.00 ns, 1.1460 us/op
+I/DOTNET  : OverheadActual   7: 1 op, 1198.00 ns, 1.1980 us/op
+I/DOTNET  : OverheadActual   8: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual   9: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadActual  10: 1 op, 1042.00 ns, 1.0420 us/op
+I/DOTNET  : OverheadActual  11: 1 op, 1302.00 ns, 1.3020 us/op
+I/DOTNET  : OverheadActual  12: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  13: 1 op, 1146.00 ns, 1.1460 us/op
+I/DOTNET  : OverheadActual  14: 1 op, 1146.00 ns, 1.1460 us/op
+I/DOTNET  : OverheadActual  15: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  16: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadActual  17: 1 op, 1094.00 ns, 1.0940 us/op
+I/DOTNET  : OverheadActual  18: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual  19: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadActual  20: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 1 op, 47760.00 ns, 47.7600 us/op
+I/DOTNET  : WorkloadWarmup   2: 1 op, 49479.00 ns, 49.4790 us/op
+I/DOTNET  : WorkloadWarmup   3: 1 op, 44688.00 ns, 44.6880 us/op
+I/DOTNET  : WorkloadWarmup   4: 1 op, 47656.00 ns, 47.6560 us/op
+I/DOTNET  : WorkloadWarmup   5: 1 op, 48385.00 ns, 48.3850 us/op
+I/DOTNET  : WorkloadWarmup   6: 1 op, 44739.00 ns, 44.7390 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 1 op, 47760.00 ns, 47.7600 us/op
+I/DOTNET  : WorkloadActual   2: 1 op, 46979.00 ns, 46.9790 us/op
+I/DOTNET  : WorkloadActual   3: 1 op, 42760.00 ns, 42.7600 us/op
+I/DOTNET  : WorkloadActual   4: 1 op, 45729.00 ns, 45.7290 us/op
+I/DOTNET  : WorkloadActual   5: 1 op, 44688.00 ns, 44.6880 us/op
+I/DOTNET  : WorkloadActual   6: 1 op, 44375.00 ns, 44.3750 us/op
+I/DOTNET  : WorkloadActual   7: 1 op, 47656.00 ns, 47.6560 us/op
+I/DOTNET  : WorkloadActual   8: 1 op, 46979.00 ns, 46.9790 us/op
+I/DOTNET  : WorkloadActual   9: 1 op, 47240.00 ns, 47.2400 us/op
+I/DOTNET  : WorkloadActual  10: 1 op, 46979.00 ns, 46.9790 us/op
+I/DOTNET  : WorkloadActual  11: 1 op, 43438.00 ns, 43.4380 us/op
+I/DOTNET  : WorkloadActual  12: 1 op, 48906.00 ns, 48.9060 us/op
+I/DOTNET  : WorkloadActual  13: 1 op, 47083.00 ns, 47.0830 us/op
+I/DOTNET  : WorkloadActual  14: 1 op, 48229.00 ns, 48.2290 us/op
+I/DOTNET  : WorkloadActual  15: 1 op, 47969.00 ns, 47.9690 us/op
+I/DOTNET  : WorkloadActual  16: 1 op, 44583.00 ns, 44.5830 us/op
+I/DOTNET  : WorkloadActual  17: 1 op, 45625.00 ns, 45.6250 us/op
+I/DOTNET  : WorkloadActual  18: 1 op, 45781.00 ns, 45.7810 us/op
+I/DOTNET  : WorkloadActual  19: 1 op, 44584.00 ns, 44.5840 us/op
+I/DOTNET  : WorkloadActual  20: 1 op, 46979.00 ns, 46.9790 us/op
+I/DOTNET  : WorkloadActual  21: 1 op, 46041.00 ns, 46.0410 us/op
+I/DOTNET  : WorkloadActual  22: 1 op, 59270.00 ns, 59.2700 us/op
+I/DOTNET  : WorkloadActual  23: 1 op, 47292.00 ns, 47.2920 us/op
+I/DOTNET  : WorkloadActual  24: 1 op, 45677.00 ns, 45.6770 us/op
+I/DOTNET  : WorkloadActual  25: 1 op, 42968.00 ns, 42.9680 us/op
+I/DOTNET  : WorkloadActual  26: 1 op, 44115.00 ns, 44.1150 us/op
+I/DOTNET  : WorkloadActual  27: 1 op, 43125.00 ns, 43.1250 us/op
+I/DOTNET  : WorkloadActual  28: 1 op, 44687.00 ns, 44.6870 us/op
+I/DOTNET  : WorkloadActual  29: 1 op, 44531.00 ns, 44.5310 us/op
+I/DOTNET  : WorkloadActual  30: 1 op, 44636.00 ns, 44.6360 us/op
+I/DOTNET  : WorkloadActual  31: 1 op, 43958.00 ns, 43.9580 us/op
+I/DOTNET  : WorkloadActual  32: 1 op, 45469.00 ns, 45.4690 us/op
+I/DOTNET  : WorkloadActual  33: 1 op, 41615.00 ns, 41.6150 us/op
+I/DOTNET  : WorkloadActual  34: 1 op, 45677.00 ns, 45.6770 us/op
+I/DOTNET  : WorkloadActual  35: 1 op, 43385.00 ns, 43.3850 us/op
+I/DOTNET  : WorkloadActual  36: 1 op, 45000.00 ns, 45.0000 us/op
+I/DOTNET  : WorkloadActual  37: 1 op, 47135.00 ns, 47.1350 us/op
+I/DOTNET  : WorkloadActual  38: 1 op, 44687.00 ns, 44.6870 us/op
+I/DOTNET  : WorkloadActual  39: 1 op, 43958.00 ns, 43.9580 us/op
+I/DOTNET  : WorkloadActual  40: 1 op, 42084.00 ns, 42.0840 us/op
+I/DOTNET  : WorkloadActual  41: 1 op, 74011.00 ns, 74.0110 us/op
+I/DOTNET  : WorkloadActual  42: 1 op, 45157.00 ns, 45.1570 us/op
+I/DOTNET  : WorkloadActual  43: 1 op, 45729.00 ns, 45.7290 us/op
+I/DOTNET  : WorkloadActual  44: 1 op, 44740.00 ns, 44.7400 us/op
+I/DOTNET  : WorkloadActual  45: 1 op, 47969.00 ns, 47.9690 us/op
+I/DOTNET  : WorkloadActual  46: 1 op, 54479.00 ns, 54.4790 us/op
+I/DOTNET  : WorkloadActual  47: 1 op, 49479.00 ns, 49.4790 us/op
+I/DOTNET  : WorkloadActual  48: 1 op, 49688.00 ns, 49.6880 us/op
+I/DOTNET  : WorkloadActual  49: 1 op, 48438.00 ns, 48.4380 us/op
+I/DOTNET  : WorkloadActual  50: 1 op, 47604.00 ns, 47.6040 us/op
+I/DOTNET  : WorkloadActual  51: 1 op, 45833.00 ns, 45.8330 us/op
+I/DOTNET  : WorkloadActual  52: 1 op, 48073.00 ns, 48.0730 us/op
+I/DOTNET  : WorkloadActual  53: 1 op, 47343.00 ns, 47.3430 us/op
+I/DOTNET  : WorkloadActual  54: 1 op, 45521.00 ns, 45.5210 us/op
+I/DOTNET  : WorkloadActual  55: 1 op, 47969.00 ns, 47.9690 us/op
+I/DOTNET  : WorkloadActual  56: 1 op, 48177.00 ns, 48.1770 us/op
+I/DOTNET  : WorkloadActual  57: 1 op, 47968.00 ns, 47.9680 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 1 op, 46719.00 ns, 46.7190 us/op
+I/DOTNET  : WorkloadResult   2: 1 op, 45938.00 ns, 45.9380 us/op
+I/DOTNET  : WorkloadResult   3: 1 op, 41719.00 ns, 41.7190 us/op
+I/DOTNET  : WorkloadResult   4: 1 op, 44688.00 ns, 44.6880 us/op
+I/DOTNET  : WorkloadResult   5: 1 op, 43647.00 ns, 43.6470 us/op
+I/DOTNET  : WorkloadResult   6: 1 op, 43334.00 ns, 43.3340 us/op
+I/DOTNET  : WorkloadResult   7: 1 op, 46615.00 ns, 46.6150 us/op
+I/DOTNET  : WorkloadResult   8: 1 op, 45938.00 ns, 45.9380 us/op
+I/DOTNET  : WorkloadResult   9: 1 op, 46199.00 ns, 46.1990 us/op
+I/DOTNET  : WorkloadResult  10: 1 op, 45938.00 ns, 45.9380 us/op
+I/DOTNET  : WorkloadResult  11: 1 op, 42397.00 ns, 42.3970 us/op
+I/DOTNET  : WorkloadResult  12: 1 op, 47865.00 ns, 47.8650 us/op
+I/DOTNET  : WorkloadResult  13: 1 op, 46042.00 ns, 46.0420 us/op
+I/DOTNET  : WorkloadResult  14: 1 op, 47188.00 ns, 47.1880 us/op
+I/DOTNET  : WorkloadResult  15: 1 op, 46928.00 ns, 46.9280 us/op
+I/DOTNET  : WorkloadResult  16: 1 op, 43542.00 ns, 43.5420 us/op
+I/DOTNET  : WorkloadResult  17: 1 op, 44584.00 ns, 44.5840 us/op
+I/DOTNET  : WorkloadResult  18: 1 op, 44740.00 ns, 44.7400 us/op
+I/DOTNET  : WorkloadResult  19: 1 op, 43543.00 ns, 43.5430 us/op
+I/DOTNET  : WorkloadResult  20: 1 op, 45938.00 ns, 45.9380 us/op
+I/DOTNET  : WorkloadResult  21: 1 op, 45000.00 ns, 45.0000 us/op
+I/DOTNET  : WorkloadResult  22: 1 op, 46251.00 ns, 46.2510 us/op
+I/DOTNET  : WorkloadResult  23: 1 op, 44636.00 ns, 44.6360 us/op
+I/DOTNET  : WorkloadResult  24: 1 op, 41927.00 ns, 41.9270 us/op
+I/DOTNET  : WorkloadResult  25: 1 op, 43074.00 ns, 43.0740 us/op
+I/DOTNET  : WorkloadResult  26: 1 op, 42084.00 ns, 42.0840 us/op
+I/DOTNET  : WorkloadResult  27: 1 op, 43646.00 ns, 43.6460 us/op
+I/DOTNET  : WorkloadResult  28: 1 op, 43490.00 ns, 43.4900 us/op
+I/DOTNET  : WorkloadResult  29: 1 op, 43595.00 ns, 43.5950 us/op
+I/DOTNET  : WorkloadResult  30: 1 op, 42917.00 ns, 42.9170 us/op
+I/DOTNET  : WorkloadResult  31: 1 op, 44428.00 ns, 44.4280 us/op
+I/DOTNET  : WorkloadResult  32: 1 op, 40574.00 ns, 40.5740 us/op
+I/DOTNET  : WorkloadResult  33: 1 op, 44636.00 ns, 44.6360 us/op
+I/DOTNET  : WorkloadResult  34: 1 op, 42344.00 ns, 42.3440 us/op
+I/DOTNET  : WorkloadResult  35: 1 op, 43959.00 ns, 43.9590 us/op
+I/DOTNET  : WorkloadResult  36: 1 op, 46094.00 ns, 46.0940 us/op
+I/DOTNET  : WorkloadResult  37: 1 op, 43646.00 ns, 43.6460 us/op
+I/DOTNET  : WorkloadResult  38: 1 op, 42917.00 ns, 42.9170 us/op
+I/DOTNET  : WorkloadResult  39: 1 op, 41043.00 ns, 41.0430 us/op
+I/DOTNET  : WorkloadResult  40: 1 op, 44116.00 ns, 44.1160 us/op
+I/DOTNET  : WorkloadResult  41: 1 op, 44688.00 ns, 44.6880 us/op
+I/DOTNET  : WorkloadResult  42: 1 op, 43699.00 ns, 43.6990 us/op
+I/DOTNET  : WorkloadResult  43: 1 op, 46928.00 ns, 46.9280 us/op
+I/DOTNET  : WorkloadResult  44: 1 op, 48438.00 ns, 48.4380 us/op
+I/DOTNET  : WorkloadResult  45: 1 op, 48647.00 ns, 48.6470 us/op
+I/DOTNET  : WorkloadResult  46: 1 op, 47397.00 ns, 47.3970 us/op
+I/DOTNET  : WorkloadResult  47: 1 op, 46563.00 ns, 46.5630 us/op
+I/DOTNET  : WorkloadResult  48: 1 op, 44792.00 ns, 44.7920 us/op
+I/DOTNET  : WorkloadResult  49: 1 op, 47032.00 ns, 47.0320 us/op
+I/DOTNET  : WorkloadResult  50: 1 op, 46302.00 ns, 46.3020 us/op
+I/DOTNET  : WorkloadResult  51: 1 op, 44480.00 ns, 44.4800 us/op
+I/DOTNET  : WorkloadResult  52: 1 op, 46928.00 ns, 46.9280 us/op
+I/DOTNET  : WorkloadResult  53: 1 op, 47136.00 ns, 47.1360 us/op
+I/DOTNET  : WorkloadResult  54: 1 op, 46927.00 ns, 46.9270 us/op
+I/DOTNET  : // GC:  0 0 0 4288 1
+I/DOTNET  : // Threading:  0 0 1
+I/DOTNET  : 
+I/DOTNET  : Mean = 44.886 us, StdErr = 0.262 us (0.58%), N = 54, StdDev = 1.928 us
+I/DOTNET  : Min = 40.574 us, Q1 = 43.556 us, Median = 44.688 us, Q3 = 46.498 us, Max = 48.647 us
+I/DOTNET  : IQR = 2.942 us, LowerFence = 39.143 us, UpperFence = 50.910 us
+I/DOTNET  : ConfidenceInterval = [43.972 us; 45.800 us] (CI 99.9%), Margin = 0.914 us (2.04% of Mean)
+I/DOTNET  : Skewness = -0.14, Kurtosis = 2.17, MValue = 3.8
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 1 (10.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:46 (0h 0m from now) **
+I/DOTNET  : // **************************
+I/DOTNET  : // Benchmark: UpdateValueTwoLevels.Compiled_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : // *** Execute ***
+I/DOTNET  : // Launch: 1 / 1
+I/DOTNET  : 
+I/DOTNET  : // Benchmark Process Environment Information:
+I/DOTNET  : // BenchmarkDotNet v0.14.0
+I/DOTNET  : // Runtime=.NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : // GC=Non-concurrent Workstation
+I/DOTNET  : // HardwareIntrinsics=ArmBase VectorSize=128
+I/DOTNET  : // Job: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : 
+I/DOTNET  : OverheadJitting  1: 1 op, 235364.00 ns, 235.3640 us/op
+I/DOTNET  : WorkloadJitting  1: 1 op, 171354.00 ns, 171.3540 us/op
+I/DOTNET  : 
+I/DOTNET  : OverheadWarmup   1: 1 op, 886.00 ns, 886.0000 ns/op
+I/DOTNET  : OverheadWarmup   2: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadWarmup   3: 1 op, 834.00 ns, 834.0000 ns/op
+I/DOTNET  : OverheadWarmup   4: 1 op, 1250.00 ns, 1.2500 us/op
+I/DOTNET  : OverheadWarmup   5: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : OverheadWarmup   6: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadWarmup   7: 1 op, 782.00 ns, 782.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : OverheadActual   1: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual   2: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual   3: 1 op, 625.00 ns, 625.0000 ns/op
+I/DOTNET  : OverheadActual   4: 1 op, 938.00 ns, 938.0000 ns/op
+I/DOTNET  : OverheadActual   5: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual   6: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual   7: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual   8: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadActual   9: 1 op, 1041.00 ns, 1.0410 us/op
+I/DOTNET  : OverheadActual  10: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual  11: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  12: 1 op, 990.00 ns, 990.0000 ns/op
+I/DOTNET  : OverheadActual  13: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  14: 1 op, 833.00 ns, 833.0000 ns/op
+I/DOTNET  : OverheadActual  15: 1 op, 937.00 ns, 937.0000 ns/op
+I/DOTNET  : OverheadActual  16: 1 op, 989.00 ns, 989.0000 ns/op
+I/DOTNET  : OverheadActual  17: 1 op, 1198.00 ns, 1.1980 us/op
+I/DOTNET  : OverheadActual  18: 1 op, 885.00 ns, 885.0000 ns/op
+I/DOTNET  : OverheadActual  19: 1 op, 729.00 ns, 729.0000 ns/op
+I/DOTNET  : OverheadActual  20: 1 op, 781.00 ns, 781.0000 ns/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadWarmup   1: 1 op, 37031.00 ns, 37.0310 us/op
+I/DOTNET  : WorkloadWarmup   2: 1 op, 34375.00 ns, 34.3750 us/op
+I/DOTNET  : WorkloadWarmup   3: 1 op, 34740.00 ns, 34.7400 us/op
+I/DOTNET  : WorkloadWarmup   4: 1 op, 43490.00 ns, 43.4900 us/op
+I/DOTNET  : WorkloadWarmup   5: 1 op, 37136.00 ns, 37.1360 us/op
+I/DOTNET  : WorkloadWarmup   6: 1 op, 37344.00 ns, 37.3440 us/op
+I/DOTNET  : WorkloadWarmup   7: 1 op, 37865.00 ns, 37.8650 us/op
+I/DOTNET  : WorkloadWarmup   8: 1 op, 33125.00 ns, 33.1250 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadActual   1: 1 op, 32188.00 ns, 32.1880 us/op
+I/DOTNET  : WorkloadActual   2: 1 op, 33281.00 ns, 33.2810 us/op
+I/DOTNET  : WorkloadActual   3: 1 op, 32344.00 ns, 32.3440 us/op
+I/DOTNET  : WorkloadActual   4: 1 op, 33854.00 ns, 33.8540 us/op
+I/DOTNET  : WorkloadActual   5: 1 op, 34063.00 ns, 34.0630 us/op
+I/DOTNET  : WorkloadActual   6: 1 op, 32760.00 ns, 32.7600 us/op
+I/DOTNET  : WorkloadActual   7: 1 op, 33282.00 ns, 33.2820 us/op
+I/DOTNET  : WorkloadActual   8: 1 op, 33438.00 ns, 33.4380 us/op
+I/DOTNET  : WorkloadActual   9: 1 op, 34271.00 ns, 34.2710 us/op
+I/DOTNET  : WorkloadActual  10: 1 op, 32395.00 ns, 32.3950 us/op
+I/DOTNET  : WorkloadActual  11: 1 op, 50730.00 ns, 50.7300 us/op
+I/DOTNET  : WorkloadActual  12: 1 op, 32709.00 ns, 32.7090 us/op
+I/DOTNET  : WorkloadActual  13: 1 op, 33333.00 ns, 33.3330 us/op
+I/DOTNET  : WorkloadActual  14: 1 op, 31354.00 ns, 31.3540 us/op
+I/DOTNET  : WorkloadActual  15: 1 op, 32031.00 ns, 32.0310 us/op
+I/DOTNET  : WorkloadActual  16: 1 op, 31458.00 ns, 31.4580 us/op
+I/DOTNET  : WorkloadActual  17: 1 op, 33333.00 ns, 33.3330 us/op
+I/DOTNET  : WorkloadActual  18: 1 op, 32552.00 ns, 32.5520 us/op
+I/DOTNET  : WorkloadActual  19: 1 op, 32292.00 ns, 32.2920 us/op
+I/DOTNET  : WorkloadActual  20: 1 op, 32448.00 ns, 32.4480 us/op
+I/DOTNET  : WorkloadActual  21: 1 op, 30417.00 ns, 30.4170 us/op
+I/DOTNET  : WorkloadActual  22: 1 op, 32865.00 ns, 32.8650 us/op
+I/DOTNET  : WorkloadActual  23: 1 op, 32813.00 ns, 32.8130 us/op
+I/DOTNET  : WorkloadActual  24: 1 op, 31145.00 ns, 31.1450 us/op
+I/DOTNET  : WorkloadActual  25: 1 op, 31823.00 ns, 31.8230 us/op
+I/DOTNET  : WorkloadActual  26: 1 op, 32708.00 ns, 32.7080 us/op
+I/DOTNET  : WorkloadActual  27: 1 op, 32031.00 ns, 32.0310 us/op
+I/DOTNET  : WorkloadActual  28: 1 op, 32604.00 ns, 32.6040 us/op
+I/DOTNET  : 
+I/DOTNET  : WorkloadResult   1: 1 op, 31303.00 ns, 31.3030 us/op
+I/DOTNET  : WorkloadResult   2: 1 op, 32396.00 ns, 32.3960 us/op
+I/DOTNET  : WorkloadResult   3: 1 op, 31459.00 ns, 31.4590 us/op
+I/DOTNET  : WorkloadResult   4: 1 op, 32969.00 ns, 32.9690 us/op
+I/DOTNET  : WorkloadResult   5: 1 op, 33178.00 ns, 33.1780 us/op
+I/DOTNET  : WorkloadResult   6: 1 op, 31875.00 ns, 31.8750 us/op
+I/DOTNET  : WorkloadResult   7: 1 op, 32397.00 ns, 32.3970 us/op
+I/DOTNET  : WorkloadResult   8: 1 op, 32553.00 ns, 32.5530 us/op
+I/DOTNET  : WorkloadResult   9: 1 op, 33386.00 ns, 33.3860 us/op
+I/DOTNET  : WorkloadResult  10: 1 op, 31510.00 ns, 31.5100 us/op
+I/DOTNET  : WorkloadResult  11: 1 op, 31824.00 ns, 31.8240 us/op
+I/DOTNET  : WorkloadResult  12: 1 op, 32448.00 ns, 32.4480 us/op
+I/DOTNET  : WorkloadResult  13: 1 op, 30469.00 ns, 30.4690 us/op
+I/DOTNET  : WorkloadResult  14: 1 op, 31146.00 ns, 31.1460 us/op
+I/DOTNET  : WorkloadResult  15: 1 op, 30573.00 ns, 30.5730 us/op
+I/DOTNET  : WorkloadResult  16: 1 op, 32448.00 ns, 32.4480 us/op
+I/DOTNET  : WorkloadResult  17: 1 op, 31667.00 ns, 31.6670 us/op
+I/DOTNET  : WorkloadResult  18: 1 op, 31407.00 ns, 31.4070 us/op
+I/DOTNET  : WorkloadResult  19: 1 op, 31563.00 ns, 31.5630 us/op
+I/DOTNET  : WorkloadResult  20: 1 op, 29532.00 ns, 29.5320 us/op
+I/DOTNET  : WorkloadResult  21: 1 op, 31980.00 ns, 31.9800 us/op
+I/DOTNET  : WorkloadResult  22: 1 op, 31928.00 ns, 31.9280 us/op
+I/DOTNET  : WorkloadResult  23: 1 op, 30260.00 ns, 30.2600 us/op
+I/DOTNET  : WorkloadResult  24: 1 op, 30938.00 ns, 30.9380 us/op
+I/DOTNET  : WorkloadResult  25: 1 op, 31823.00 ns, 31.8230 us/op
+I/DOTNET  : WorkloadResult  26: 1 op, 31146.00 ns, 31.1460 us/op
+I/DOTNET  : WorkloadResult  27: 1 op, 31719.00 ns, 31.7190 us/op
+I/DOTNET  : // GC:  0 0 0 4304 1
+I/DOTNET  : // Threading:  0 0 1
+I/DOTNET  : 
+I/DOTNET  : Mean = 31.700 us, StdErr = 0.172 us (0.54%), N = 27, StdDev = 0.894 us
+I/DOTNET  : Min = 29.532 us, Q1 = 31.224 us, Median = 31.719 us, Q3 = 32.397 us, Max = 33.386 us
+I/DOTNET  : IQR = 1.172 us, LowerFence = 29.466 us, UpperFence = 34.154 us
+I/DOTNET  : ConfidenceInterval = [31.063 us; 32.337 us] (CI 99.9%), Margin = 0.637 us (2.01% of Mean)
+I/DOTNET  : Skewness = -0.27, Kurtosis = 2.79, MValue = 2
+I/DOTNET  : 
+I/DOTNET  : // ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2025-02-17 15:45 (0h 0m from now) **
+I/DOTNET  : // ***** BenchmarkRunner: Finish  *****
+I/DOTNET  : 
+I/DOTNET  : // * Export *
+I/DOTNET  : 
+I/DOTNET  : // * Detailed results *
+I/DOTNET  : UpdateValueTwoLevels.Compiled_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 31.700 us, StdErr = 0.172 us (0.54%), N = 27, StdDev = 0.894 us
+I/DOTNET  : Min = 29.532 us, Q1 = 31.224 us, Median = 31.719 us, Q3 = 32.397 us, Max = 33.386 us
+I/DOTNET  : IQR = 1.172 us, LowerFence = 29.466 us, UpperFence = 34.154 us
+I/DOTNET  : ConfidenceInterval = [31.063 us; 32.337 us] (CI 99.9%), Margin = 0.637 us (2.01% of Mean)
+I/DOTNET  : Skewness = -0.27, Kurtosis = 2.79, MValue = 2
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [29.505 us ; 30.417 us) | @@
+I/DOTNET  : [30.417 us ; 31.251 us) | @@@@@
+I/DOTNET  : [31.251 us ; 32.032 us) | @@@@@@@@@@@@
+I/DOTNET  : [32.032 us ; 33.073 us) | @@@@@@
+I/DOTNET  : [33.073 us ; 33.777 us) | @@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : UpdateValueTwoLevels.Classic_UpdateWhenSourceChanges: Job-ALEXEF(Toolchain=InProcessEmitToolchain, InvocationCount=1, UnrollFactor=1)
+I/DOTNET  : Runtime = ; GC = 
+I/DOTNET  : Mean = 44.886 us, StdErr = 0.262 us (0.58%), N = 54, StdDev = 1.928 us
+I/DOTNET  : Min = 40.574 us, Q1 = 43.556 us, Median = 44.688 us, Q3 = 46.498 us, Max = 48.647 us
+I/DOTNET  : IQR = 2.942 us, LowerFence = 39.143 us, UpperFence = 50.910 us
+I/DOTNET  : ConfidenceInterval = [43.972 us; 45.800 us] (CI 99.9%), Margin = 0.914 us (2.04% of Mean)
+I/DOTNET  : Skewness = -0.14, Kurtosis = 2.17, MValue = 3.8
+I/DOTNET  : -------------------- Histogram --------------------
+I/DOTNET  : [40.477 us ; 41.831 us) | @@@
+I/DOTNET  : [41.831 us ; 43.170 us) | @@@@@@@
+I/DOTNET  : [43.170 us ; 44.811 us) | @@@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [44.811 us ; 45.893 us) | @
+I/DOTNET  : [45.893 us ; 47.233 us) | @@@@@@@@@@@@@@@@@@@
+I/DOTNET  : [47.233 us ; 48.692 us) | @@@@
+I/DOTNET  : ---------------------------------------------------
+I/DOTNET  : 
+I/DOTNET  : // * Summary *
+I/DOTNET  : 
+I/DOTNET  : BenchmarkDotNet v0.14.0, Unknown 
+I/DOTNET  : Unknown processor
+I/DOTNET  :   [Host] : .NET 9.0.1 using MonoVM, Arm64 ArmBase
+I/DOTNET  : 
+I/DOTNET  : Toolchain=InProcessEmitToolchain  InvocationCount=1  UnrollFactor=1  
+I/DOTNET  : 
+I/DOTNET  : | Method                           | Mean     | Error    | StdDev   | Ratio | RatioSD | Allocated | Alloc Ratio |
+I/DOTNET  : |--------------------------------- |---------:|---------:|---------:|------:|--------:|----------:|------------:|
+I/DOTNET  : | Compiled_UpdateWhenSourceChanges | 31.70 us | 0.637 us | 0.894 us |  0.71 |    0.04 |         - |          NA |
+I/DOTNET  : | Classic_UpdateWhenSourceChanges  | 44.89 us | 0.914 us | 1.928 us |  1.00 |    0.06 |         - |          NA |
+I/DOTNET  : 
+I/DOTNET  : // * Legends *
+I/DOTNET  :   Mean        : Arithmetic mean of all measurements
+I/DOTNET  :   Error       : Half of 99.9% confidence interval
+I/DOTNET  :   StdDev      : Standard deviation of all measurements
+I/DOTNET  :   Ratio       : Mean of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   RatioSD     : Standard deviation of the ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   Allocated   : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+I/DOTNET  :   Alloc Ratio : Allocated memory ratio distribution ([Current]/[Baseline])
+I/DOTNET  :   1 us        : 1 Microsecond (0.000001 sec)
+I/DOTNET  : 
+I/DOTNET  : // * Diagnostic Output - MemoryDiagnoser *
+I/DOTNET  : 
+I/DOTNET  : 
+I/DOTNET  : // ***** BenchmarkRunner: End *****
+I/DOTNET  : Run time: 00:00:04 (4.15 sec), executed benchmarks: 2
+I/DOTNET  : 
+I/DOTNET  : Global total time: 00:00:54 (54.99 sec), executed benchmarks: 10
+I/DOTNET  : // * Artifacts cleanup *
+I/DOTNET  : Artifacts cleanup is finished
